@@ -1,0 +1,298 @@
+/* Blocks
+---------------------------*/
+#region-pre .block .content *,
+#region-post .block content * {
+	max-width: 170px;
+}
+
+.block {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	min-height: 40px;
+	border: none;
+}
+
+.block .content {
+	padding-top: 20px;
+	margin: 0 auto;
+	line-height: 2em;
+}
+
+#region-pre .block .content,
+#region-main .block .content {
+	border-right: 1px solid #244f77;
+	border-bottom: 1px solid #244f77;
+	border-left: 1px solid #244f77;
+}
+
+#region-post .block .content {
+	border-right: 1px solid #2663ae;
+	border-left: 1px solid #2663ae;
+	border-bottom: 1px solid #2663ae;
+}
+
+.block .header {
+	border-bottom: none;
+	min-height: 23px;
+	background: #244f77;
+}
+
+#region-post .block .header {
+	background: #2663ae;
+}
+
+.blockaction {
+	background: #fff;
+}
+
+.block_action img {
+	margin-right: 2px !important;
+	display: inline-block;
+}
+
+/* Blocks - Editing Mode
+---------------------------*/
+body.editing .block .header .commands {
+	float: right;
+	width: auto;
+	height: 16px;
+	border-right: 1px solid #244f77;
+	border-bottom: 1px solid #244f77;
+	border-left: 1px solid #244f77;
+	vertical-align: middle;
+	background-color: #e8e8e8;
+}
+
+body.editing #region-post .block .header .commands {
+	border-bottom: 1px solid #2663ae;
+	border-left: 1px solid #2663ae;
+	border-right: 1px solid #2663ae;
+}
+
+.block .header .commands a {
+	padding-bottom: 0px;
+	border-right: 1px solid #2e7cdc !important;
+	border-right: 1px solid #2663ae;
+}
+
+.block .header .commands .icon img {
+	width: 15px;
+	height: 15px;
+	margin-right: 0px;
+	vertical-align: top;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.block .commands a.editing_roles {
+	border-right: 0px solid #2e7cdc !important;
+}
+
+.block .header .title .block_action {
+	margin-top: 5px;
+}
+
+/* Blocks - Title
+---------------------------*/
+.block .title h2 {
+	font-weight: bold;
+    font-size: 14px;
+	margin: 0;
+	margin-left: 15px;
+	text-transform: none;
+	margin-left: 5px;
+	color: #fff;
+	line-height: 23px;
+	max-width: 180px;
+}
+
+#region-pre .block .content {
+	color: #333;
+}
+
+.block .header input {
+	background: transparent;
+	border: none;
+	padding: 0px;
+}
+
+body.editing .block .content .commands .iconsmall,
+body.editing .block .content .section-modchooser img {
+	height:15px;
+	width:15px;
+}
+
+/* Special Block Styles
+---------------------------*/
+.ygtvfocus {
+	background: #ccc !important
+}
+
+/* einstellungen */
+.block hr {
+	display: none;
+	visibility: hidden;
+}
+
+/*suche im forum */
+.block .block_search_forums input,.block_blog_menu input#blogsearchquery
+	{
+	background: #fff !important;
+}
+
+.block .block_search_forums .searchform {
+	text-align: left;
+}
+
+.root_node {
+	background-position: 0px 5px !important;
+}
+
+.block p.root_node,.block p.branch {
+	font-weight: bold;
+}
+
+.block ul li ul {
+	margin-left: 5px !important;
+	border-left: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+
+#region-pre .block ul li ul {
+	border-color: #666 !important;
+}
+
+/* Block - HTML
+---------------------------*/
+.block.block_html .content {
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.block.block_html .content {
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+/*Kurse*/
+ul.unlist li {
+	line-height: 1.2em;
+	margin-bottom: 8px !important;
+}
+
+/*Nachrichten*/
+.block .block_news_items .date {
+	border: 1px solid #ccc !important;
+	display: block !important;
+	background: red;
+}
+
+/*Testergebnisse*/
+.block .block_quiz_results .content {
+	text-align: left;
+}
+
+.block .header .block_action input:hover {
+	background: #transparent;
+	border: none;
+	padding: 0px;
+}
+
+/* Block - Eigene Dateien
+---------------------------*/
+.block_private_files {
+	word-break: break-all;
+}
+
+.block_private_files .content input {
+	margin-top: 10px;
+}
+
+.block .block_private_files table td {
+	overflow: hidden !important;
+	max-width: 60px;
+	word-break: break-all;
+}
+
+.block .block_private_files table td a {
+	overflow: hidden !important;
+	max-width: 60px;
+	word-break: break-all;
+}
+
+/* Block - Kalender
+---------------------------*/
+.block_calendar_month .content {
+	padding:0;
+	padding-top: 20px;
+	word-break: break;
+}
+
+.block_calendar_month th,td {
+	padding: .2em;
+	border: 0;
+}
+
+.calendartable td {
+	border-width:0;
+}
+
+.calendartable tr {
+	border-bottom: 1px solid;
+}
+
+/* Filters at the End */
+.block_calendar_month .filters table {
+	border-spacing: 0;
+	padding: 0;
+	padding-left: 2px;
+}
+
+.block_calendar_month .filters th, td {
+	padding: 0;
+}
+
+/* Editing Mode */
+body.editing .block_calendar_month img.iconsmall {
+	width: 15px;
+	height: 15px;
+}
+
+/* Block - Summary
+---------------------------*/
+#region-post .block_course_summary .content {
+	border-top: 1px solid #2663ae;
+}
+
+#region-pre .block_course_summary .content {
+	border-top: 1px solid #244f77;
+}
+
+body.editing .block_course_summary .commands {
+	margin-top: 23px;
+	margin-right: 0px;
+}
+body.editing .block_course_summary .header .block_action {
+	display: none;
+}
+
+/* Block - Navigation
+---------------------------*/
+.block_navigation .block_tree .tree_item {
+	margin: 0;
+}
+
+.block_navigation .block_tree .smallicon {
+	width: 15px;
+	height: 15px;
+}
+
+/* Block - Navigation
+---------------------------*/
+.block_settings .block_tree ul,
+.block_settings .block_tree li,
+.block_settings .block_tree li ul,
+.block_navigation .block_tree ul,
+.block_navigation .block_tree li.depth_2 ul {
+	padding-left: 5px;
+}

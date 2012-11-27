@@ -1,0 +1,104 @@
+ 
+
+/*
+ * Mentees todo
+ */
+.dock_item_new_Mentees_block_picture {
+	background-image: url([[pix:theme|New_mentees_block]]);
+	width: 35px !important;
+	height: 35px !important;
+}
+
+
+
+/* 
+ 
+body.pagelayout-login #page {
+	min-height:782px;
+	overflow:hidden;
+        width:1500px !important;
+        margin:0 auto;
+        background-image: url([[pix:theme|frontpage]]) !important;
+               background-position:1px 58px;
+	background-repeat: no-repeat;
+        border:1px solid red;
+          
+}
+
+body.pagelayout-login #region-main {
+	
+ 	 height:630px;
+ 	
+        margin-left:auto !important;
+ 	
+ 	padding:0;
+ 	
+       background-color:transparent;
+        width:100%;
+        border:1px solid pink;
+        
+}
+
+body.pagelayout-login #page-content #region-main .region-content {
+	
+        width:auto;
+	padding: 0px 20px 0px 20px;
+        border:1px solid green;
+        background-image:none !important;
+        brackground-color:transparent !important;
+        
+}
+
+body.pagelayout-login #page-content #region-post-box {
+	background:transparent;
+	margin:0;
+	
+}
+body.pagelayout-login #page-content #region-pre-box {
+	background:transparent;
+	
+	
+} */
+
+/* Footer
+-------------------------------*/ /*
+
+body.notloggedin.pagelayout-login #page-footer {
+	background:transparent;
+        width:1320px; margin:0 auto !important;
+       height:37px;
+        float:none;
+       
+
+      
+     
+        
+}
+
+body.notloggedin.pagelayout-login #page-footer .moodlefootericon {
+	
+        margin-right:15px;
+	
+      
+     
+        
+}
+body.notloggedin.pagelayout-login #page-footer .logininfo {
+	
+	margin-left:80px;
+        height:1.2em;
+        margin-top:5px;
+       
+      
+    
+        
+}
+
+body.notloggedin.pagelayout-login #page-footer span.date {
+	display:inline-block;
+	margin-left:80px;
+      
+    
+        
+}
+ */

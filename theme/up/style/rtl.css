@@ -1,0 +1,74 @@
+/* FRONTPAGE - NORMAL (2 Columns)
+------------------------------*/
+
+
+/* FRONTPAGE - NORMAL (2 Columns)
+------------------------------*/
+body.dir-rtl.notloggedin.pagelayout-frontpage #page-content #region-post-box {
+	margin-left:-150px;
+}
+
+body.dir-rtl.notloggedin.pagelayout-frontpage #page-content #region-pre {
+	left:220px;
+}
+
+body.dir-rtl.notloggedin.pagelayout-frontpage #page-content #region-post {
+	left:640px;
+}
+
+/* FRONTPAGE - SIDE-PRE only
+------------------------------*/
+body.dir-rtl.notloggedin.pagelayout-frontpage.side-pre-only #page-content #region-main-box #region-post-box {
+	margin-left: -150px;
+}
+
+body.dir-rtl.notloggedin.pagelayout-frontpage.side-pre-only #page-content #region-main-box #region-post-box #region-pre {
+    left: 220px;
+}
+
+/* FRONTPAGE - SIDE-POST only
+------------------------------*/
+body.dir-rtl.notloggedin.pagelayout-frontpage.side-post-only #page-content #region-main-box #region-post-box {
+	margin-left: -150px;	
+}
+
+body.dir-rtl.notloggedin.pagelayout-frontpage.side-post-only #page-content #region-main-box #region-post-box #region-post {
+	left:220px;
+}
+
+
+/* Other styles
+------------------------------*/
+
+.dir-rtl .headermenu {
+	float:none !important;
+}
+
+body.dir-rtl #newheaderleft {
+	background-image: none !important;
+}
+
+body.dir-rtl #newheader {
+	left:0px !important;margin-right:15px;
+}
+
+body.dir-rtl .region-content .categorybox {
+	padding-right:5px;
+}
+
+body.dir-rtl .root_node {
+	background-position:right !important
+}
+
+body.dir-rtl .block ul li ul {
+	border-left:0px;
+	border-right:1px dotted #ccc;
+}
+
+body.dir-rtl.editing .mform .fitem .fitemtitle {
+	text-align: left;
+}
+
+body.dir-rtl h1.headermain {
+	padding-right:10px;
+}

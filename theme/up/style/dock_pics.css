@@ -1,0 +1,909 @@
+/*NOTE: Bilder für die Dockleiste
+Bilder für die Dockleiste müssen so abgelegt werden, dass die Bilder mit [Titel].jpg gefunden werden
+Zusätzlich muss für jedes Bild eine CSS-Regel angelegt werden vergleiche die Regel für Navigation:
+.dock_item_Navigation_picture {
+background-image:url([[pix:theme|Navigation]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+1) .dock_item_Navigation_picture muss z.B. zu .dock_item_Einstellungen_picture umbenannt werden
+2) background-image:url([[pix:theme|Navigation]]); muss zu background-image:url([[pix:theme|Einstellungen]]); umbenannt werden*/
+
+/*manual added */
+.dock_item_Login-UP_picture {
+background-image: url([[pix:theme|Login-UP]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* manual added
+ * Course evaluation SL_QUAMP
+ */
+.dock_item_Course_evaluation_picture {
+	background-image: url([[pix:theme|course_evaluation]]);
+	width: 35px !important;
+	height: 35px !important;
+}
+
+/*manual added */
+.dock_item_Danh_mục_khoá_học_picture,
+.dock_item_Categorias_de_disciplinas_picture,
+.dock_item_Categorias_de_Cursos_picture,
+.dock_item_Категории_курсов_picture,
+.dock_item_categoriae_classis_picture,
+.dock_item_Categorie_di_corso_picture,
+.dock_item_Κατηγορίες_μαθημάτων_picture,
+.dock_item_Catégories_de_cours_picture,
+.dock_item_Categorías_picture,
+.dock_item_Course_categories_picture,
+.dock_item_Kursbereiche_picture,
+.dock_item_课程分类_picture,
+.dock_item_Kategorie_kurzů_picture,
+.dock_item_Kategorie_kursów_picture,
+.dock_item_कोर्स_वर्ग_picture {
+background-image: url([[pix:theme|courses]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* manual added */
+.dock_item_Courses_picture,
+.dock_item_Kurse_picture,
+.dock_item_Kurzy_picture,
+.dock_item_Cursos_picture,
+.dock_item_Cours_picture,
+.dock_item_Corsi_picture,
+.dock_item_classēs_picture,
+.dock_item_Kursy_picture,
+.dock_item_Disciplinas_picture,
+.dock_item_Khoá_học_picture,
+.dock_item_Μαθήματα_picture,
+.dock_item_Курсы_picture,
+.dock_item_Դասընթացներ_picture,
+.dock_item_درس‌ها_picture
+.dock_item_कोर्स_picture,
+.dock_item_课程_picture {
+background-image: url([[pix:theme|courses]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* manual added */
+.dock_item_Moodle_Hilfe_picture,
+.dock_item_Moodle_Help_picture,
+.dock_item_Moodle_सहायता_picture,
+.dock_item_Moodle_Nápověda_picture,
+.dock_item_Moodle_帮助_picture,
+.dock_item_Moodle_Ayuda_picture,
+.dock_item_Moodle_Aide_picture,
+.dock_item_Moodle_Βοήθεια_picture,
+.dock_item_Moodle_Aiuto_picture,
+.dock_item_Moodle_auxilium_picture,
+.dock_item_Moodle_Справка_picture,
+.dock_item_Moodle_Օգնություն_picture,
+.dock_item_Moodle_Pomoc_picture,
+.dock_item_Moodle_Ajuda_picture,
+.dock_item_Moodle_راهنمایی_picture,
+.dock_item_Moodle_Trợ_giúp_picture {
+background-image: url([[pix:theme|help]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/*manual added */
+.dock_item_Links_picture,
+.dock_item_Odkazy_picture,
+.dock_item_链接_picture,
+.dock_item_Enlaces_picture,
+.dock_item_Liens_picture,
+.dock_item_Link_picture,
+.dock_item_Ссылки_picture,
+.dock_item_Linki_picture {
+background-image: url([[pix:theme|links]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_activity_modules 
+--------------------------*/
+.dock_item_Activities_picture, /*manual added*/
+.dock_item_Činnosti_picture,
+.dock_item_Aktivitäten_picture,
+.dock_item_Δραστηριότητες_picture,
+.dock_item_Actividades_picture,
+.dock_item_فعالیت‌ها_picture,
+.dock_item_Activités_picture,
+.dock_item_गतिविधियाँ_picture,
+.dock_item_Գործունեություններ_picture,
+.dock_item_Attività_picture,
+.dock_item_agitationēs_picture,
+.dock_item_Aktywności_picture,
+.dock_item_Atividades_picture,
+.dock_item_Atividades_picture,
+.dock_item_Элементы_курса_picture,
+.dock_item_Hoạt_động_picture,
+.dock_item_活动_picture {
+background-image: url([[pix:theme|activity_modules]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_admin_bookmarks 
+--------------------------*/
+.dock_item_Admin_bookmarks_picture, /* manual added */
+.dock_item_Upravit_záložky_picture,
+.dock_item_Administratorlesezeichen_picture,
+.dock_item_Σελιδοδείκτες_διαχειριστή_picture,
+.dock_item_Marcadores_del_administrador_picture,
+.dock_item_نشانه‌های_مدیر_picture,
+.dock_item_Marque-pages_administrateur_picture,
+.dock_item_ऍड्मिन_बुकमार्क_picture,
+.dock_item_Կառավարչի_էջանշաններ_picture,
+.dock_item_Segnalibri_amministratore_picture,
+.dock_item_indicēs_paginārum_administratoris_picture,
+.dock_item_Zakładki_administratorów_picture,
+.dock_item_Gestão_de_marcadores_picture,
+.dock_item_Favoritos_do_administrador_picture,
+.dock_item_Закладки_администратора_picture,
+.dock_item_Trang_lưu_của_quản_trị_picture,
+.dock_item_管理员书签_picture {
+background-image: url([[pix:theme|admin_bookmarks]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_blog_menu 
+--------------------------*/
+.dock_item_Blog_menu_picture, /* manual added */
+.dock_item_Nástroje_blogu_picture,
+.dock_item_Blogmenü_picture,
+.dock_item_Μενού_ιστολογίων_picture,
+.dock_item_Menú_Blog_picture,
+.dock_item_Menu_blog_picture,
+.dock_item_Բլոգի_ընտրացանկ_picture,
+.dock_item_Menu_blog_picture,
+.dock_item_Menu_bloga_picture,
+.dock_item_Menu_do_Blogue_picture,
+.dock_item_Menu_do_blog_picture,
+.dock_item_Меню_блога_picture,
+.dock_item_Menu_blog_picture,
+.dock_item_博客目录_picture {
+background-image: url([[pix:theme|blog_menu]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_blog_recent 
+--------------------------*/
+.dock_item_Recent_blog_entries_picture, /*manual added*/
+.dock_item_Nové_příspěvky_blogů_picture,
+.dock_item_Neue_Blogeinträge_picture,
+.dock_item_Entradas_de_blog_recientes_picture,
+.dock_item_Articles_de_blog_récents_picture,
+.dock_item_Interventi_Blog_recenti_picture,
+.dock_item_Ostatnie_wpisy_w_blogu_picture,
+.dock_item_Entradas_recentes_do_blogue_picture,
+.dock_item_Entradas_recentes_no_blog_picture,
+.dock_item_Свежие_записи_блога_picture,
+.dock_item_最近博客更新_picture {
+background-image: url([[pix:theme|blog_recent]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_blog_tags 
+--------------------------*/
+.dock_item_Blog_tags_picture, /* manual added */
+.dock_item_Štítky_blogu_picture,
+.dock_item_Blogschlagworte_picture,
+.dock_item_Ετικέτες_ιστολογίων_picture,
+.dock_item_Marcas_Blog_picture,
+.dock_item_Tags_de_blog_picture,
+.dock_item_Բլոգի_կցապիտակներ_picture,
+.dock_item_Tag_dei_blog_picture,
+.dock_item_Tagi_bloga_picture,
+.dock_item_Palavras-chave_do_Blogue_picture,
+.dock_item_Tags_do_blog_picture,
+.dock_item_Теги_блога_picture,
+.dock_item_博客标签_picture {
+background-image: url([[pix:theme|blog_tags]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_calendar_month 
+--------------------------*/
+.dock_item_Calendar_picture, /* manual added */
+.dock_item_Kalendář_picture,
+.dock_item_Kalender_picture,
+.dock_item_Ημερολόγιο_picture,
+.dock_item_Calendario_picture,
+.dock_item_تقویم_picture,
+.dock_item_Calendrier_picture,
+.dock_item_कैलॅन्डर_picture,
+.dock_item_Օրացույց_picture,
+.dock_item_Calendario_picture,
+.dock_item_Kalendarz_picture,
+.dock_item_Calendário_picture,
+.dock_item_Calendário_picture,
+.dock_item_Календарь_picture,
+.dock_item_日历_picture {
+background-image: url([[pix:theme|calendar_month]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_calendar_upcoming 
+--------------------------*/
+.dock_item_Upcoming_events_picture, /*manual added */
+.dock_item_Nadcházející_události_picture,
+.dock_item_Aktuelle_Termine_picture,
+.dock_item_Επικείμενα_γεγονότα_picture,
+.dock_item_Eventos_próximos_picture,
+.dock_item_رویدادهای_نزدیک_picture,
+.dock_item_Événements_à_venir_picture,
+.dock_item_Սպասվող_իրադարձություններ_picture,
+.dock_item_Prossimi_eventi_picture,
+.dock_item_Nadchodzące_terminy_picture,
+.dock_item_Próximos_eventos_picture,
+.dock_item_Próximos_eventos_picture,
+.dock_item_Предстоящие_события_picture,
+.dock_item_Sự_kiện_sắp_diễn_ra_picture,
+.dock_item_即将到来事件_picture {
+background-image: url([[pix:theme|calendar_upcoming]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_comments 
+--------------------------*/
+.dock_item_Comments_picture, /* manual added*/
+.dock_item_Komentáře_picture,
+.dock_item_Kommentare_picture,
+.dock_item_Comentarios_picture,
+.dock_item_نظرات_picture,
+.dock_item_Commentaires_picture,
+.dock_item_Commenti_picture,
+.dock_item_Komentarze_picture,
+.dock_item_Comentários_picture,
+.dock_item_Comentários_picture,
+.dock_item_Комментарии_picture,
+.dock_item_评论_picture {
+background-image: url([[pix:theme|comments]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_community 
+--------------------------*/ 
+.dock_item_Vyhledávání_komunitních_kurzů_picture,
+.dock_item_Community-Suche_picture,
+.dock_item_Buscador_de_comunidad_picture,
+.dock_item_Recherche_communauté_picture,
+.dock_item_Community_finder_picture,
+.dock_item_Wyszukiwanie_społeczności_picture,
+.dock_item_Pesquisa_de_comunidade_picture,
+.dock_item_Localizador_da_comunidade_picture,
+.dock_item_社区查找器_picture {
+background-image: url([[pix:theme|community]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_completionstatus 
+--------------------------*/ 
+.dock_item_Stav_absolvování_kurzu_picture,
+.dock_item_Course_completion_status_picture, /*manual added*/
+.dock_item_Kursbearbeitungsstatus_picture,
+.dock_item_Estatus_de_finalización_del_curso_picture,
+.dock_item_Achèvement_de_cours_picture,
+.dock_item_Completamento_corso_picture,
+.dock_item_Status_ukończenia_kursu_picture,
+.dock_item_Estado_da_conclusão_da_disciplina_picture,
+.dock_item_Andamento_do_curso_picture,
+.dock_item_Статус_завершения_курса_picture,
+.dock_item_课程进度状态_picture {
+background-image: url([[pix:theme|course_completion_status]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_course_list 
+--------------------------*/ 
+.dock_item_Kurzy_picture,
+.dock_item_Kurse_picture,
+.dock_item_Λίστα_Μαθημάτων_picture,
+.dock_item_Lista_de_cursos_picture,
+.dock_item_لیست_درس‌ها_picture,
+.dock_item_Cours_picture,
+.dock_item_कोर्स_सूची_picture,
+.dock_item_Դասընթացներ_picture,
+.dock_item_Corsi_picture,
+.dock_item_Lista_kursów_picture,
+.dock_item_Lista_de_disciplinas_picture,
+.dock_item_Cursos_picture,
+.dock_item_Курсы_picture,
+.dock_item_Danh_sách_khoá_học_picture,
+.dock_item_课程_picture {
+background-image: url([[pix:theme|course_list]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_course_overview 
+--------------------------*/
+.dock_item_Přehled_kurzů_picture,
+.dock_item_Kursübersicht_picture,
+.dock_item_Visión_general_del_curso_picture,
+.dock_item_مرور_کلی_درس_picture,
+.dock_item_Vue_d\_picture,
+.dock_item_Panoramica_corsi_picture,
+.dock_item_Podgląd_kursu_picture,
+.dock_item_Resumo_da_disciplina_picture,
+.dock_item_Resumo_do_curso_picture,
+.dock_item_Обзор_курса_picture,
+.dock_item_课程概览_picture {
+background-image: url([[pix:theme|course_overview]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_course_summary 
+--------------------------*/ 
+.dock_item_Popis_kurzu/stránek_picture,
+.dock_item_Kursbeschreibung_picture,
+.dock_item_Περιγραφή_σελίδας_picture,
+.dock_item_Descripción_del_Curso/Sitio_picture,
+.dock_item_توصیف_درس/سایت_picture,
+.dock_item_Description_du_cours/du_site_picture,
+.dock_item_साइट/कोर्स_विवरण_picture,
+.dock_item_Դասընթացի/Էջի_նկարագրություն_picture,
+.dock_item_Descrizione_del_corso/sito_picture,
+.dock_item_Opis_kursu/strony_picture,
+.dock_item_Descrição_da_disciplina/do_site_picture,
+.dock_item_Descrição_do_curso/site_picture,
+.dock_item_Описание_курса/сайта_picture,
+.dock_item_Phần_mô_tả_khoá_học/hệ_thống_picture,
+.dock_item_课程/网站描述_picture {
+background-image: url([[pix:theme|course_summary]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_feedback 
+--------------------------*/ 
+.dock_item_Dotazník_picture,
+.dock_item_Feedback_picture,
+.dock_item_Retroalimentación_picture,
+.dock_item_Feedback_picture,
+.dock_item_Feedback_picture,
+.dock_item_Informacja_zwrotna_picture,
+.dock_item_Inquérito_picture,
+.dock_item_Feedback_picture,
+.dock_item_Обратная_связь_picture,
+.dock_item_反馈_picture {
+background-image: url([[pix:theme|feedback]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_glossary_random 
+--------------------------*/ 
+.dock_item_Heslo_ze_slovníku_picture,
+.dock_item_Glossareintrag_picture,
+.dock_item_Τυχαία_Εγγραφή_Λεξικού_picture,
+.dock_item_Entrada_aleatoria_del_glosario_picture,
+.dock_item_Article_d\_picture,
+.dock_item_Բառարանի_պատահական_գրառում_picture,
+.dock_item_Voce_casuale_di_glossario_picture,
+.dock_item_Losowe_pojęcie_ze_słownika_picture,
+.dock_item_Termo_aleatório_do_glossário_picture,
+.dock_item_Entrada_aleatória_do_glossário_picture,
+.dock_item_Случайная_запись_из_глоссария_picture,
+.dock_item_Thuật_ngữ_ngẫu_nhiên_picture,
+.dock_item_随机词汇条目_picture {
+background-image: url([[pix:theme|glossary_random]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_html 
+--------------------------*/ 
+.dock_item_HTML_text_picture,
+.dock_item_Textblock_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture,
+.dock_item_HTML_picture {
+background-image: url([[pix:theme|html]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_login 
+--------------------------*/ 
+.dock_item_Přihlásit_se_picture,
+.dock_item_Login_picture,
+.dock_item_Είσοδος_picture,
+.dock_item_Entrar_picture,
+.dock_item_ورود_به_سایت_picture,
+.dock_item_Connexion_picture,
+.dock_item_लॉग-इन_picture,
+.dock_item_Մուտք_picture,
+.dock_item_Login_picture,
+.dock_item_confirmatio_picture,
+.dock_item_Zaloguj_się_picture,
+.dock_item_Entrar_picture,
+.dock_item_Acesso_picture,
+.dock_item_Вход_picture,
+.dock_item_Đăng_nhập_picture,
+.dock_item_登录_picture {
+background-image: url([[pix:theme|login]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_mentees 
+--------------------------*/ 
+.dock_item_Svěřenci_picture,
+.dock_item_Mentoren_picture,
+.dock_item_Μαθητευόμενοι_picture,
+.dock_item_Mentees_picture,
+.dock_item_Participants_suivis_picture,
+.dock_item_Mentees_picture,
+.dock_item_Assistiti_picture,
+.dock_item_Podopieczni_picture,
+.dock_item_Educandos_picture,
+.dock_item_Mentorandos_picture,
+.dock_item_Подопечные_picture,
+.dock_item_Kèm_riêng_picture,
+.dock_item_学员_picture {
+background-image: url([[pix:theme|mentees]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_messages 
+--------------------------*/
+.dock_item_Messages_picture, /* manual added */
+.dock_item_Zprávy_picture,
+.dock_item_Mitteilungen_picture,
+.dock_item_Μηνύματα_picture,
+.dock_item_Mensajes_picture,
+.dock_item_Messages_personnels_picture,
+.dock_item_सन्देश_picture,
+.dock_item_Հաղորդագրություններ_picture,
+.dock_item_Messaggi_picture,
+.dock_item_Wiadomości_picture,
+.dock_item_Mensagens_picture,
+.dock_item_Mensagens_picture,
+.dock_item_Обмен_сообщениями_picture,
+.dock_item_消息_picture {
+background-image: url([[pix:theme|messages]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_mnet_hosts 
+--------------------------*/ 
+.dock_item_Partnerské_servery_picture,
+.dock_item_Netzwerkserver_picture,
+.dock_item_Διακομιστές_Δικτύου_picture,
+.dock_item_Servidores_de_Red_picture,
+.dock_item_Serveurs_du_réseau_picture,
+.dock_item_Ցանցային_սերվերներ_picture,
+.dock_item_Network_servers_picture, /* manual edited*/
+.dock_item_Sieć_Serwerów_picture,
+.dock_item_Servidores_de_rede_picture,
+.dock_item_Servidores_da_rede_picture,
+.dock_item_Сетевые_серверы_picture,
+.dock_item_Máy_chủ_Mạng_lưới_picture,
+.dock_item_网络服务器_picture {
+background-image: url([[pix:theme|mnet_hosts]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_myprofile 
+--------------------------*/
+.dock_item_Logged_in_user_picture, /*manual added*/
+.dock_item_Přihlášený_uživatel_picture,
+.dock_item_Persönliches_Profil_picture,
+.dock_item_Usuario_identificado_picture,
+.dock_item_Utilisateur_connecté_picture,
+.dock_item_Profilo_personale_picture,
+.dock_item_Profil_osobisty_picture,
+.dock_item_Utilizador_autenticado_picture,
+.dock_item_Usuário_autenticado_picture,
+.dock_item_Текущий_пользователь_picture,
+.dock_item_已登录用户_picture {
+background-image: url([[pix:theme|myprofile]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_navigation 
+--------------------------*/ 
+.dock_item_Navigace_picture,
+.dock_item_Navigation_picture,
+.dock_item_Navegación_picture,
+.dock_item_راهبری_picture,
+.dock_item_Navigation_picture,
+.dock_item_Navigazione_picture,
+.dock_item_Nawigacja_picture,
+.dock_item_Navegação_picture,
+.dock_item_Navegação_picture,
+.dock_item_Навигация_picture,
+.dock_item_导航_picture {
+background-image: url([[pix:theme|navigation]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_news_items 
+--------------------------*/
+.dock_item_Latest_news_picture, /* manual added*/
+.dock_item_Poslední_novinky_picture,
+.dock_item_Neue_Nachrichten_picture,
+.dock_item_Τελευταία_νέα_picture,
+.dock_item_Latest_news_picture,
+.dock_item_Últimas_noticias_picture,
+.dock_item_جدیدترین_خبرها_picture,
+.dock_item_Dernières_nouvelles_picture,
+.dock_item_ताज़ा_समाचार_picture,
+.dock_item_Վերջին_նորություններ_picture,
+.dock_item_Notizie_recenti_picture,
+.dock_item_Najświeższe_wiadomości_picture,
+.dock_item_Últimas_notícias_picture,
+.dock_item_Últimas_notícias_picture,
+.dock_item_Последние_новости_picture,
+.dock_item_Tin_mới_nhất_picture,
+.dock_item_最近新闻_picture {
+background-image: url([[pix:theme|news_items]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_online_users 
+--------------------------*/
+.dock_item_Online_users_picture, /* manual added*/
+.dock_item_Připojení_uživatelé_picture,
+.dock_item_Online-Aktivitäten_picture,
+.dock_item_Συνδεδεμένοι_Χρήστες_picture,
+.dock_item_Usuarios_en_línea_picture,
+.dock_item_کاربران_حاضر_picture,
+.dock_item_Utilisateurs_en_ligne_picture,
+.dock_item_Առցանց_օգտագործողներ_picture,
+.dock_item_Utenti_online_picture,
+.dock_item_Zalogowani_użytkownicy_picture,
+.dock_item_Utilizadores_ativos_picture,
+.dock_item_Usuários_Online_picture,
+.dock_item_Пользователи_на_сайте_picture,
+.dock_item_Thành_viên_trực_tuyến_picture,
+.dock_item_在线用户_picture {
+background-image: url([[pix:theme|online_users]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_participants 
+--------------------------*/ 
+.dock_item_People_picture, /* manual added */
+.dock_item_Osoby_picture,
+.dock_item_Personen_picture,
+.dock_item_Συμμετέχοντες_picture,
+.dock_item_Personas_picture,
+.dock_item_افراد_picture,
+.dock_item_Personnes_picture,
+.dock_item_लोग_picture,
+.dock_item_Մարդիկ_picture,
+.dock_item_Persone_picture,
+.dock_item_Osoby_picture,
+.dock_item_Participantes_picture,
+.dock_item_Participantes_picture,
+.dock_item_Люди_picture,
+.dock_item_Người_tham_gia_picture,
+.dock_item_通讯录_picture {
+background-image: url([[pix:theme|participants]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_private_files 
+--------------------------*/
+.dock_item_My_private_files_picture, /* manual added */
+.dock_item_Moje_osobní_soubory_picture,
+.dock_item_Eigene_Dateien_picture,
+.dock_item_Archivos_privados_del_usuario_picture,
+.dock_item_Mes_fichiers_personnels_picture,
+.dock_item_File_personali_picture,
+.dock_item_Prywatne_pliki_użytkownika_picture,
+.dock_item_Ficheiros_privados_do_utilizador_picture,
+.dock_item_Meus_arquivos_privados_picture,
+.dock_item_Мои_личные_файлы_picture,
+.dock_item_我的私人文件_picture {
+background-image: url([[pix:theme|private_files]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_quiz_results 
+--------------------------*/
+.dock_item_Quiz_results_picture, /* manual added */
+.dock_item_Výsledky_testu_picture,
+.dock_item_Testergebnisse_picture,
+.dock_item_Αποτελέσματα_του_κουίζ_picture,
+.dock_item_Resultados_del_cuestionario_picture,
+.dock_item_نتایج_آزمون_picture,
+.dock_item_Résultats_de_test_picture,
+.dock_item_Քննության_արդյունքները_picture,
+.dock_item_Risultati_del_quiz_picture,
+.dock_item_Wynik_quizu_picture,
+.dock_item_Resultados_do_teste_picture,
+.dock_item_Resultados_do_quiz_picture,
+.dock_item_Результаты_теста_picture,
+.dock_item_Kết_quả_bài_trắc_nghiệm_picture,
+.dock_item_测验成绩_picture {
+background-image: url([[pix:theme|quiz_results]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_recent_activity 
+--------------------------*/
+.dock_item_Nedávná_činnost_picture,
+.dock_item_Neue_Aktivitäten_picture,
+.dock_item_Πρόσφατη_δραστηριότητα_picture,
+.dock_item_Recent_activity_picture,
+.dock_item_Actividad_reciente_picture,
+.dock_item_فعالیت‌های_اخیر_picture,
+.dock_item_Activité_récente_picture,
+.dock_item_हाल_की_गतिविधियां_picture,
+.dock_item_Վերջին_գործունեություն_picture,
+.dock_item_Attività_recente_picture,
+.dock_item_agitatio_recens_picture,
+.dock_item_Co_się_ostatnio_działo_picture,
+.dock_item_Atividade_recente_picture,
+.dock_item_Atividade_recente_picture,
+.dock_item_Последние_действия_picture,
+.dock_item_Hoạt_động_gần_đây_picture,
+.dock_item_课程动态_picture {
+background-image: url([[pix:theme|recent_activity]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_rss_client 
+--------------------------*/
+/*manual added*/
+.dock_item_Dòng_tin_RSS_từ_xa_picture,
+.dock_item_Danh_mục_khoá_học_picture,
+.dock_item_طبقه‌های_درسی_picture,
+.dock_item_Lista_RSS_remota_picture,
+.dock_item_Alimentador_de_notícias_remoto_picture,
+.dock_item_Zdalny_serwer_RSS_picture,
+.dock_item_Отдаленная_новостная_лента_picture,
+.dock_item_Feed_news_remoto_picture, /*manual added*/
+.dock_item_Απομακρυσμένα_RSS_ειδήσεων_picture, /*manual added*/
+.dock_item_Canal_de_noticias_remoto_picture, /*manual added*/
+.dock_item_Zugriff_auf_News_Feed_picture,
+.dock_item_远程新闻种子_picture, /*manual added*/
+.dock_item_Vzdálený_RSS_zdroj_picture, /* manual added */
+.dock_item_Remote_news_feed_picture, /* manual added */
+.dock_item_Čtečka_RSS_picture,
+.dock_item_Externe_RSS-Feeds_picture,
+.dock_item_RSS_picture,
+.dock_item_Cliente_RSS_picture,
+.dock_item_Flux_RSS_distants_picture,
+.dock_item_RSS_հաճախորդ_picture,
+.dock_item_Feed_RSS_remoto_picture,
+.dock_item_Klient_RSS_picture,
+.dock_item_Feed_RSS_picture,
+.dock_item_Alimentadores_RSS_remotos_picture,
+.dock_item_Удаленные_RSS-ленты_picture,
+.dock_item_Trình_đọc_tin_RSS_picture,
+.dock_item_远程RSS种子_picture {
+background-image: url([[pix:theme|rss_client]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_search_forums 
+--------------------------*/
+.dock_item_Search_forums_picture, /*manual added*/
+.dock_item_Prohledat_fóra_picture,
+.dock_item_Suche_in_Foren_picture,
+.dock_item_Αναζήτηση_στις_ομάδες_συζήτησης_picture,
+.dock_item_Buscar_foros_picture,
+.dock_item_جستجو_در_تالارها_picture,
+.dock_item_Recherche_forums_picture,
+.dock_item_फ़ोरम्स_सर्च_picture,
+.dock_item_Որոնում_ֆորումներում_picture,
+.dock_item_Ricerca_nei_forum_picture,
+.dock_item_Szukaj_w_forach_picture,
+.dock_item_Procurar_nos_fóruns_picture,
+.dock_item_Pesquisar_nos_Fóruns_picture,
+.dock_item_Поиск_по_форумам_picture,
+.dock_item_搜索讨论区_picture {
+background-image: url([[pix:theme|search_forums]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_section_links 
+--------------------------*/
+.dock_item_Section_links_picture, /* manual added */
+.dock_item_Odkazy_na_oddíly_picture,
+.dock_item_Kursabschnitte_picture,
+.dock_item_Σύνδεσμοι_ενοτήτων_picture,
+.dock_item_Enlaces_de_sección_picture,
+.dock_item_Liens_vers_sections_picture,
+.dock_item_Բաժնի_հղումներ_picture,
+.dock_item_Collegamenti_sezione_picture,
+.dock_item_Linki_do_sekcji_picture,
+.dock_item_Links_de_secção_picture,
+.dock_item_Links_para_Seções_picture,
+.dock_item_Ссылки_на_разделы_picture,
+.dock_item_小节链接_picture {
+background-image: url([[pix:theme|section_links]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_selfcompletion 
+--------------------------*/
+.dock_item_Self_completion_picture, /* manual added */
+.dock_item_Absolvování_kurzu_picture,
+.dock_item_Kurs_selbst_abschließen_picture,
+.dock_item_Autocompletar_picture,
+.dock_item_Auto-achèvement_picture,
+.dock_item_Auto_completamento_picture,
+.dock_item_Auto_conclusão_picture,
+.dock_item_Auto-completar_picture,
+.dock_item_Самостоятельное_отслеживание_завершения_picture,
+.dock_item_自设完成_picture {
+background-image: url([[pix:theme|selfcompletion]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_settings 
+--------------------------*/
+.dock_item_Settings_picture, /*manual added*/
+.dock_item_Nastavení_picture,
+.dock_item_Einstellungen_picture,
+.dock_item_Ajustes_picture,
+.dock_item_تنظیمات_picture,
+.dock_item_Réglages_picture,
+.dock_item_Impostazioni_picture,
+.dock_item_Ustawienia_picture,
+.dock_item_Configurações_picture,
+.dock_item_Configurações_picture,
+.dock_item_Настройки_picture,
+.dock_item_设置_picture {
+background-image: url([[pix:theme|settings]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_site_main_menu 
+--------------------------*/
+.dock_item_Hlavní_nabídka_picture,
+.dock_item_Hauptmenü_picture,
+.dock_item_Κύριο_μενού_picture,
+.dock_item_Main_menu_picture,
+.dock_item_Menú_principal_picture,
+.dock_item_منوی_اصلی_picture,
+.dock_item_Menu_principal_picture,
+.dock_item_मुख्य_मॅन्यु_picture,
+.dock_item_Հիմնական_ընտրացանկ_picture,
+.dock_item_Menu_principale_picture,
+.dock_item_Menu_główne_picture,
+.dock_item_Menu_principal_picture,
+.dock_item_Menu_Principal_picture,
+.dock_item_Основное_меню_picture,
+.dock_item_Trình_đơn_chính_picture,
+.dock_item_主菜单_picture {
+background-image: url([[pix:theme|site_main_menu]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_social_activities 
+--------------------------*/ 
+.dock_item_Společné_činnosti_picture,
+.dock_item_Soziale_Aktivitäten_picture,
+.dock_item_Κοινωνικές_Δραστηριότητες_picture,
+.dock_item_Actividades_sociales_picture,
+.dock_item_Activités_sociales_picture,
+.dock_item_सामाजिक_गतिविधियाँ_picture,
+.dock_item_Հասարակական_գործունեություններ_picture,
+.dock_item_Attività_sociali_picture,
+.dock_item_Aktywności_towarzyskie_picture,
+.dock_item_Atividades_sociais_picture,
+.dock_item_Atividades_sociais_picture,
+.dock_item_Общественная_деятельность_picture,
+.dock_item_社区活动_picture {
+background-image: url([[pix:theme|social_activities]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_tags 
+--------------------------*/ 
+.dock_item_Štítky_picture,
+.dock_item_Schlagworte_picture,
+.dock_item_Ετικέτες_picture,
+.dock_item_Marcas_picture,
+.dock_item_برچسب‌ها_picture,
+.dock_item_Tags_picture,
+.dock_item_Պիտակներ_picture,
+.dock_item_Tag_picture,
+.dock_item_Tagi_picture,
+.dock_item_Palavras-chave_picture,
+.dock_item_Tags_picture,
+.dock_item_Теги_picture,
+.dock_item_标签_picture {
+background-image: url([[pix:theme|tags]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_tag_flickr 
+--------------------------*/ 
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture,
+.dock_item_Flickr_picture {
+background-image: url([[pix:theme|tag_flickr]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+/* block_tag_youtube 
+--------------------------*/ 
+.dock_item_Youtube_picture,
+.dock_item_YouTube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_YouTube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture,
+.dock_item_Youtube_picture {
+background-image: url([[pix:theme|tag_youtube]]);
+width: 35px !important;
+height: 35px !important;
+}
+
+
+
+/* Problems with following styles
+block_community.php en_us
+block_community.php ru
+block_glossary_random.php hi
+block_quiz_results.php hi
+block_rss_client.php hi
+block_tags.php en_us
+block_tag_flickr.php pl
+*/
