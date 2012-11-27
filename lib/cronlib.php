@@ -69,7 +69,13 @@ function cron_run() {
     // to randomly choose the percentage of times we should run these jobs.
     srand ((double) microtime() * 10000000);
     $random100 = rand(0,100);
-    if ($random100 < 20) {     // Approximately 20% of the time.
+// Special UP-Changes-START
+    $_hour = localtime();
+    $_hour = $_hour[2];    
+    //if ($random100 < 20) {     // Approximately 20% of the time.
+    if ($random100 < 20 && 0 <= $_hour && $_hour <= 5) {	
+    	// Approximately 20% of the time and only during the night
+// Special UP-Changes-END
         mtrace("Running clean-up tasks...");
 
         // Delete users who haven't confirmed within required period
@@ -106,8 +112,23 @@ function cron_run() {
 
 
         // Delete old logs to save space (this might need a timer to slow it down...)
+        // Special UP-Changes-START
+        // rherbst, 31.08.2011 - log table gets realy big
+        // so we need to use backup table
+        $backup_loglifetime = $timenow - (366 * 24 * 3600);
         if (!empty($CFG->loglifetime)) {  // value in days
+            //$loglifetime = $timenow - ($CFG->loglifetime * 3600 * 24);
+        	mtrace("Deleting records from log_backup older than $backup_loglifetime");
+        	delete_records_select("log_backup", "time < '$backup_loglifetime'");
+        	// Special UP-Changes-END
+            
             $loglifetime = $timenow - ($CFG->loglifetime * 3600 * 24);
+            // Special UP-Changes-START
+            mtrace("Moving log records to log_backup older than $loglifetime");
+            $sql = "insert ignore into {$CFG->prefix}log_backup select * from {$CFG->prefix}log where time < '$loglifetime'";
+            execute_sql($sql, false);
+            mtrace("Deleting records from log older than $loglifetime");
+            // Special UP-Changes-END
             $DB->delete_records_select("log", "time < ?", array($loglifetime));
             mtrace(" Deleted old log records");
         }
@@ -441,6 +462,9 @@ function cron_run() {
 
     // Run stats as at the end because they are known to take very long time on large sites
     if (!empty($CFG->enablestats) and empty($CFG->disablestatsprocessing)) {
+    	// Special UP-Changes-START
+    	mtrace("Running stats crons if required...");
+    	// Special UP-Changes-END
         require_once($CFG->dirroot.'/lib/statslib.php');
         // check we're not before our runtime
         $timetocheck = stats_get_base_daily() + $CFG->statsruntimestarthour*60*60 + $CFG->statsruntimestartminute*60;

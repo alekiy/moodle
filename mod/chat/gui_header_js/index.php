@@ -71,7 +71,10 @@ $courseshortname = format_string($course->shortname, true, array('context' => ge
   </title>
  </head>
  <frameset cols="*,200" border="5" framespacing="no" frameborder="yes" marginwidth="2" marginheight="1">
-  <frameset rows="0,0,*,50" border="0" framespacing="no" frameborder="no" marginwidth="2" marginheight="1">
+<!-- Special UP-Changes-START  -->
+<!--   <frameset rows="0,0,*,50" border="0" framespacing="no" frameborder="no" marginwidth="2" marginheight="1">  -->
+	<frameset rows="0,0,*,80" border="0" framespacing="no" frameborder="no" marginwidth="2" marginheight="1">
+<!-- Special UP-Changes-END -->  
    <frame src="../empty.php" name="empty" scrolling="no" marginwidth="0" marginheight="0">
    <frame src="<?php echo $updatemode ?>.php?<?php echo $params ?>" name="jsupdate" scrolling="no" marginwidth="0" marginheight="0">
    <frame src="chatmsg.php?<?php echo $params ?>" name="msg" scrolling="auto" marginwidth="2" marginheight="1">

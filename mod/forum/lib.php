@@ -5597,8 +5597,20 @@ function forum_print_latest_discussions($course, $forum, $maxdiscussions=-1, $di
         echo '</thead>';
         echo '<tbody>';
     }
+    //Special UP-Changes-START
+    if (!isloggedin()) {
+    	echo '<div id="newsticker" class="newsticker-wrapper">';
+    	echo '<div class="newsticker-contents-wrapper">';
+    	echo '<div class="newsticker-contents">';
+    }
+    //Special UP-Changes-END
 
     foreach ($discussions as $discussion) {
+    	//Special UP-Changes-START
+    	if (!isloggedin()) {
+    		echo '<div class="newstickerpost">';
+    	}
+    	//Special UP-Changes-END
         if (!empty($replies[$discussion->discussion])) {
             $discussion->replies = $replies[$discussion->discussion]->replies;
             $discussion->lastpostid = $replies[$discussion->discussion]->lastpostid;
@@ -5658,7 +5670,19 @@ function forum_print_latest_discussions($course, $forum, $maxdiscussions=-1, $di
                         '', null, true, $forumtracked);
             break;
         }
+        //Special UP-Changes-START
+        if (!isloggedin()) {
+        	echo '</div>';
+        }
+        //Special UP-Changes-END
     }
+    //Special UP-Changes-START
+    if (!isloggedin()) {
+    	echo '</div>';
+    	echo '</div>';
+    	echo '</div>';
+    }
+    //Special UP-Changes-END
 
     if ($displayformat == "header") {
         echo '</tbody>';

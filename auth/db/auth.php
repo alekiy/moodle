@@ -435,9 +435,15 @@ class auth_plugin_db extends auth_plugin_base {
         $authdb = $this->db_init();
 
         // fetch userlist
+        // Special UP-Changes-START
+        //$rs = $authdb->Execute("SELECT {$this->config->fielduser} AS username
+        //                       FROM   {$this->config->table} ");
+        
+        // seyde 20080523 check status=2, because only this user are active
         $rs = $authdb->Execute("SELECT {$this->config->fielduser} AS username
-                                FROM   {$this->config->table} ");
-
+        						FROM   {$this->config->table} WHERE status = 2 ");
+        // Special UP-Changes-END
+        
         if (!$rs) {
             print_error('auth_dbcantconnect','auth_db');
         } else if (!$rs->EOF) {

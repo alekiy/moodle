@@ -1276,7 +1276,10 @@ $string['password'] = 'Password';
 $string['passwordconfirmchange'] = 'Confirm password change';
 $string['passwordextlink'] = 'The following link has been provided to recover your lost password. This will take you out of Moodle.';
 $string['passwordforgotten'] = 'Forgotten password';
-$string['passwordforgotteninstructions'] = 'Your details must first be found in the user database. Please enter <strong>either</strong> your username or your registered email address in the appropriate box. There is no need to enter both.';
+// Special UP-Changes-START
+//$string['passwordforgotteninstructions'] = 'Your details must first be found in the user database. Please enter <strong>either</strong> your username or your registered email address in the appropriate box. There is no need to enter both.';
+$string['uppasswordforgotteninstructions'] = 'If you have lost your password, please contact one of the ZEIK offices (www.zeik.uni-potsdam.de). Do not forget your student card!';
+// Special UP-Changes-END
 $string['passwordforgotteninstructions2'] = 'To reset your password, submit your username or your email address below. If we can find you in the database, an email will be sent to your email address, with instructions how to get access again.';
 $string['passwordchanged'] = 'Password has been changed';
 $string['passwordnohelp'] = 'No help is available to find your lost password. Please contact your Moodle administrator.';
@@ -1864,3 +1867,13 @@ $string['yourself'] = 'yourself';
 $string['yourteacher'] = 'your {$a}';
 $string['yourwordforx'] = 'Your word for \'{$a}\'';
 $string['zippingbackup'] = 'Zipping backup';
+// Special UP-Changes-START
+$string['fileexistserror'] = 'File already exists: $a';
+$string['filenotfounderror'] = 'File not found: $a';
+$string['couldnotrenamefileerror'] = 'Could not rename file: $a';
+$string['invalidshortname'] = 'Invalid shortname';
+$string['missingidnumber'] = 'ID Number missing';
+$string['invalididnumber'] = 'Invalid ID Number';
+$string['importofuserdatadeactivated'] = 'Import of user data deactivated due to security considerations';
+$string['login_logout'] = 'Login/Logout';
+// Special UP-Changes-END

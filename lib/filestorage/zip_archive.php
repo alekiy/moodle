@@ -153,6 +153,13 @@ class zip_archive extends file_archive {
         $info->index             = $index;
         $info->original_pathname = $result['name'];
         $info->pathname          = $this->unmangle_pathname($result['name']);
+        // Special UP-Changes-START
+        if (mb_detect_encoding($result['name'], "UTF-8", true)) {
+        	$info->pathname          = $this->unmangle_pathname($result['name']);
+        }else{
+        	$info->pathname 		 = $this->unmangle_pathname(utf8_decode($result['name']));
+        }
+        // Special UP-Changes-END
         $info->mtime             = (int)$result['mtime'];
 
         if ($info->pathname[strlen($info->pathname)-1] === '/') {

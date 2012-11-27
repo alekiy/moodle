@@ -129,6 +129,9 @@ function stats_cron_daily($maxdays=1) {
     }
 
     $nextmidnight = stats_get_next_day_start($timestart);
+    // Special UP-Changes-START
+    mtrace("running from $midnight to $nextmidnight");
+    // Special UP-Changes-END
 
     // are there any days that need to be processed?
     if ($now < $nextmidnight) {

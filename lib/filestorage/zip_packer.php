@@ -315,10 +315,19 @@ class zip_packer extends file_packer {
             return false;
         }
 
+		// Special UP-Changes-START      
+        $i=0;
+        $save = array();
         foreach ($ziparch as $info) {
             $size = $info->size;
             $name = $info->pathname;
-
+	
+			if (array_key_exists($name, $save)) {
+				$name = preg_replace('/\?/','?'.$i,$name,1);
+				$i++;
+			}
+			$save[$name]= true;		
+		// Special UP-Changes-END	
             if ($name === '' or array_key_exists($name, $processed)) {
                 //probably filename collisions caused by filename cleaning/conversion
                 continue;

@@ -3851,13 +3851,26 @@ function create_course($data, $editoroptions = NULL) {
         if ($DB->record_exists('course', array('shortname' => $data->shortname))) {
             throw new moodle_exception('shortnametaken');
         }
+    
+    // Special UP-Changes-START
+    // check for invalid shortname
+    	if (preg_match("/^\s*$/", $data->shortname) ) {
+     		throw new moodle_exception('invalidshortname');
+    	}
+    // Special UP-Changes-END
     }
-
+    
     //check if the id number already exist
     if (!empty($data->idnumber)) {
         if ($DB->record_exists('course', array('idnumber' => $data->idnumber))) {
             throw new moodle_exception('idnumbertaken');
         }
+        // Special UP-Changes-START
+        // check for invalid course ID
+        if (preg_match("/^\s*$/", $data->idnumber) ) {
+        	throw new moodle_exception('invalidcourseid');
+        }
+        // Special UP-Changes-END
     }
 
     $data->timecreated  = time();

@@ -180,10 +180,17 @@ class auth_plugin_ldap extends auth_plugin_base {
 
         // Try to bind with current username and password
         $ldap_login = @ldap_bind($ldapconnection, $ldap_user_dn, $extpassword);
-        $this->ldap_close();
+        //Special UP-Changes-START
+        //$this->ldap_close();
         if ($ldap_login) {
-            return true;
+        	$this->ldap_close();
+        	return true;
+        }elseif (ldap_errno($ldapconnection) == 19) {
+        	$this->ldap_close();
+        	error("You have reached the maximum number of failed logins. Your account is temporarily locked.");
         }
+        //Special UP-Changes-END
+
         return false;
     }
 
@@ -809,6 +816,11 @@ class auth_plugin_ldap extends auth_plugin_base {
             print_string('noupdatestobedone', 'auth_ldap');
         }
 
+// Special UP-Changes-START
+/*
+// seyde 20080523 We do not add LDAP-users automaticall
+// so the complete code for User Additions is commented out
+        
 /// User Additions
         // Find users missing in DB that are in LDAP
         // and gives me a nifty object I don't want.
@@ -863,7 +875,9 @@ class auth_plugin_ldap extends auth_plugin_base {
         } else {
             print_string('nouserstobeadded', 'auth_ldap');
         }
-
+// seyde 20080523 end of code for User Additions	
+*/
+// Special UP-Changes-END
         $dbman->drop_table($table);
         $this->ldap_close();
 

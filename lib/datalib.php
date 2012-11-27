@@ -134,9 +134,12 @@ function search_users($courseid, $groupid, $searchtext, $sort='', array $excepti
         $order = "";
     }
 
-    $select = "u.deleted = 0 AND u.confirmed = 1 AND (".$DB->sql_like($fullname, ':search1', false)." OR ".$DB->sql_like('u.email', ':search2', false).")";
+// Special UP-Changes-START
+    $select = "u.deleted = 0 AND u.confirmed = 1 AND (".$DB->sql_like($fullname, ':search1', false)." OR ".$DB->sql_like('u.email', ':search2', false)." OR ".$DB->sql_like('username', ':search3', false).")";
     $params['search1'] = "%$searchtext%";
     $params['search2'] = "%$searchtext%";
+    $params['search3'] = "%$searchtext%";
+// Special UP-Changes-END
 
     if (!$courseid or $courseid == SITEID) {
         $sql = "SELECT u.id, u.firstname, u.lastname, u.email
@@ -740,11 +743,15 @@ function get_courses_search($searchterms, $sort='fullname ASC', $page=0, $record
     $i = 0;
 
     // Thanks Oracle for your non-ansi concat and type limits in coalesce. MDL-29912
+// Special UP-Changes-START    
     if ($DB->get_dbfamily() == 'oracle') {
-        $concat = $DB->sql_concat('c.summary', "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname');
+        //	$concat = $DB->sql_concat('c.summary', "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname');
+   		$concat = $DB->sql_concat('c.summary', "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname', "' '", 't.lastname', "' '", 't.firstname', "''", '');
     } else {
-        $concat = $DB->sql_concat("COALESCE(c.summary, '". $DB->sql_empty() ."')", "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname');
+    	//$concat = $DB->sql_concat("COALESCE(c.summary, '". $DB->sql_empty() ."')", "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname');
+    	$concat = $DB->sql_concat("COALESCE(c.summary, '". $DB->sql_empty() ."')", "' '", 'c.fullname', "' '", 'c.idnumber', "' '", 'c.shortname', "' '", 't.firstname', "' '", 't.lastname');
     }
+// Special UP-Changes-END
 
     foreach ($searchterms as $searchterm) {
         $i++;
@@ -796,12 +803,37 @@ function get_courses_search($searchterms, $sort='fullname ASC', $page=0, $record
     $limitto   = $limitfrom + $recordsperpage;
 
     list($ccselect, $ccjoin) = context_instance_preload_sql('c.id', CONTEXT_COURSE, 'ctx');
-    $sql = "SELECT c.* $ccselect
-              FROM {course} c
-           $ccjoin
-             WHERE $searchcond AND c.id <> ".SITEID."
-          ORDER BY $sort";
-
+    // Special UP-Changes-START
+    /*   $sql = "SELECT c.* $ccselect
+     FROM {course} c
+    $ccjoin
+    WHERE $searchcond AND c.id <> ".SITEID."
+    ORDER BY $sort"; */
+    // add t.lastname and t.firstname to $ccseleect
+    // can be improved with funtion context_instance_preload_sql
+    $ccselect .= ", t.lastname, t.firstname";
+    /*  $sql = "SELECT c.* $ccselect
+     			FROM {course} c
+    				$ccjoin
+    			LEFT OUTER JOIN {role_assignments} ra
+    				ON (ctx.id = ra.contextid AND ra.roleid IN
+    					(SELECT id from {role} where name='Teacher'))
+    			LEFT OUTER JOIN {user} t
+    				ON (ra.userid = t.id)
+    			WHERE $searchcond AND c.id <> ".SITEID."
+    			ORDER BY $sort"; */
+    $sql = "SELECT c.* , ctx.id AS ctxid, ctx.path AS ctxpath, ctx.depth AS ctxdepth, ctx.contextlevel AS ctxlevel, ctx.instanceid AS ctxinstance, t.lastname, t.firstname
+    		FROM mdl_course c
+   			LEFT JOIN mdl_context ctx ON (ctx.instanceid = c.id AND ctx.contextlevel = 50)
+    		LEFT OUTER JOIN mdl_role_assignments ra
+    			ON (ctx.id = ra.contextid AND ra.roleid IN
+    				(SELECT id from mdl_role where name='Teacher'))
+    		LEFT OUTER JOIN mdl_user t
+    			ON (ra.userid = t.id)
+    				WHERE LOWER(CONCAT_WS(' ', COALESCE(c.summary, ''), c.fullname, c.idnumber, c.shortname, t.firstname, t.lastname)) LIKE LOWER('%$searchterm%') AND c.id <> 1
+    ORDER BY fullname ASC";
+    // Special UP-Changes-END
+    
     $rs = $DB->get_recordset_sql($sql, $params);
     foreach($rs as $course) {
         context_instance_preload($course);

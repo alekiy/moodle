@@ -181,7 +181,13 @@
     }
 
 /// Show all the sessions
-
+// Special UP-Changes-START
+    /// Show all the sessions
+    /// rherbst, 22.01.2009
+    /// A session is shown if there are more than one non-system messages in it, even if all they are from one
+    /// user (teacher), and the other users are listening only!
+    $sessionmessages   = 0;
+// Special UP-Changes-END
     $sessiongap        = 5 * 60;    // 5 minutes silence means a new session
     $sessionend        = 0;
     $sessionstart      = 0;
@@ -202,7 +208,13 @@
             $sessionend = $message->timestamp;
         }
         if ((($lasttime - $message->timestamp) < $sessiongap) and $messagesleft) {  // Same session
-            if ($message->userid and !$message->system) {       // Remember user and count messages
+        	// Special UP-Changes-START
+        	//if ($message->userid and !$message->system) {       // Remember user and count messages
+        	if ($message->userid ) {           // Remember user
+        		if (!$message->system) {       // count non-system messages
+        			$sessionmessages++;
+        		}
+        	// Special UP-Changes-END
                 if (empty($sessionusers[$message->userid])) {
                     $sessionusers[$message->userid] = 1;
                 } else {
@@ -212,7 +224,10 @@
         } else {
             $sessionstart = $lasttime;
 
-            $is_complete = ($sessionend - $sessionstart > 60 and count($sessionusers) > 1);
+            // Special UP-Changes-START
+            //$is_complete = ($sessionend - $sessionstart > 60 and count($sessionusers) > 1);
+            $is_complete = ($sessionend - $sessionstart > 60 and ((count($sessionusers) > 1 and $sessionmessages >0) or $sessionmessages > 1));
+// 			//Special UP-Changes-END
             if ($show_all or $is_complete) {
 
                 echo '<p align="center">'.userdate($sessionstart).' --> '. userdate($sessionend).'</p>';
@@ -258,6 +273,9 @@
             $sessionend = $message->timestamp;
             $sessionusers = array();
             $sessionusers[$message->userid] = 1;
+            // Special UP-Changes-START
+            $sessionmessages = 0;
+            // Special UP-Changes-END
         }
         $lasttime = $message->timestamp;
     }

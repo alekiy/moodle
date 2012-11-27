@@ -188,7 +188,11 @@ $PAGE->verify_https_required();
 /// DISPLAY FORM
 
 echo $OUTPUT->header();
-echo $OUTPUT->box(get_string('passwordforgotteninstructions2'), 'generalbox boxwidthnormal boxaligncenter');
+// Special UP-Changes-START
+// diable form display and only print special up password recovery message
+//echo $OUTPUT->box(get_string('passwordforgotteninstructions2'), 'generalbox boxwidthnormal boxaligncenter');
 $mform->display();
+echo $OUTPUT->box(get_string('uppasswordforgotteninstructions'), 'generalbox boxwidthnormal boxaligncenter');
+// Special UP-Changes-END
 
 echo $OUTPUT->footer();
