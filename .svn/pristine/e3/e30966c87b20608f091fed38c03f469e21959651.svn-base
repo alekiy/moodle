@@ -1,9 +1,0 @@
-<h1>Course key</h1>
-
-<p>
-  With this setting, you can manual set the course key for the current course. This overwrites
-  the course key managed by the Moodle administrator. How ever, when no course key is available
-  for this course, you can define it yourself and match keys between QUAMP and Moodle.
-  If you wish to use the settings managed by the Moodle Administrator, let this field empty.
-</p>
-

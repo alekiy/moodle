@@ -1,8 +1,0 @@
-===== Moodle Block Module for Course Evaluation =====
-
-This Moodle block module enables you to show up course evaluation links within a sidebar block in your Moodle courses.
-The given URL leads a student to a feedback questionnaire managed by your QUAMP instance.
-
-Further information on installing etc. can be found under:
-
-  * http://wiki.quamp.de/doku.php?id=manual:qvaluation:moodle#moodle_block_module
