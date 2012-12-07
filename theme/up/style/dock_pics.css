@@ -1,4 +1,4 @@
-/*NOTE: Bilder für die Dockleiste
+﻿/*NOTE: Bilder für die Dockleiste
 Bilder für die Dockleiste müssen so abgelegt werden, dass die Bilder mit [Titel].jpg gefunden werden
 Zusätzlich muss für jedes Bild eine CSS-Regel angelegt werden vergleiche die Regel für Navigation:
 .dock_item_Navigation_picture {
@@ -20,6 +20,7 @@ height: 35px !important;
 /* manual added
  * Course evaluation SL_QUAMP
  */
+ .dock_item_Kurs-Evaluation_picture,
 .dock_item_Course_evaluation_picture {
 	background-image: url([[pix:theme|course_evaluation]]);
 	width: 35px !important;
@@ -178,7 +179,7 @@ height: 35px !important;
 --------------------------*/
 .dock_item_Recent_blog_entries_picture, /*manual added*/
 .dock_item_Nové_příspěvky_blogů_picture,
-.dock_item_Neue_Blogeinträge_picture,
+.dock_item_Aktuelle_Blogeinträge_picture,
 .dock_item_Entradas_de_blog_recientes_picture,
 .dock_item_Articles_de_blog_récents_picture,
 .dock_item_Interventi_Blog_recenti_picture,
@@ -295,7 +296,7 @@ height: 35px !important;
 --------------------------*/ 
 .dock_item_Stav_absolvování_kurzu_picture,
 .dock_item_Course_completion_status_picture, /*manual added*/
-.dock_item_Kursbearbeitungsstatus_picture,
+.dock_item_Bearbeitungsstand_picture,
 .dock_item_Estatus_de_finalización_del_curso_picture,
 .dock_item_Achèvement_de_cours_picture,
 .dock_item_Completamento_corso_picture,
@@ -518,7 +519,7 @@ height: 35px !important;
 --------------------------*/
 .dock_item_Logged_in_user_picture, /*manual added*/
 .dock_item_Přihlášený_uživatel_picture,
-.dock_item_Persönliches_Profil_picture,
+.dock_item_Eigenes_Profil_picture,
 .dock_item_Usuario_identificado_picture,
 .dock_item_Utilisateur_connecté_picture,
 .dock_item_Profilo_personale_picture,
@@ -526,6 +527,8 @@ height: 35px !important;
 .dock_item_Utilizador_autenticado_picture,
 .dock_item_Usuário_autenticado_picture,
 .dock_item_Текущий_пользователь_picture,
+.dock_item_Συνδεδεμένος_χρήστης_picture,
+.dock_item_Pesquisar_comunidades_picture,
 .dock_item_已登录用户_picture {
 background-image: url([[pix:theme|myprofile]]);
 width: 35px !important;
@@ -704,7 +707,7 @@ height: 35px !important;
 .dock_item_Externe_RSS-Feeds_picture,
 .dock_item_RSS_picture,
 .dock_item_Cliente_RSS_picture,
-.dock_item_Flux_RSS_distants_picture,
+.dock_item_Flux_RSS_picture,
 .dock_item_RSS_հաճախորդ_picture,
 .dock_item_Feed_RSS_remoto_picture,
 .dock_item_Klient_RSS_picture,
@@ -712,6 +715,7 @@ height: 35px !important;
 .dock_item_Alimentadores_RSS_remotos_picture,
 .dock_item_Удаленные_RSS-ленты_picture,
 .dock_item_Trình_đọc_tin_RSS_picture,
+.dock_item_Նորությունների_հեռադիր_ժապավեն_picture,
 .dock_item_远程RSS种子_picture {
 background-image: url([[pix:theme|rss_client]]);
 width: 35px !important;
@@ -764,7 +768,7 @@ height: 35px !important;
 --------------------------*/
 .dock_item_Self_completion_picture, /* manual added */
 .dock_item_Absolvování_kurzu_picture,
-.dock_item_Kurs_selbst_abschließen_picture,
+.dock_item_Kurs_abschließen_picture,
 .dock_item_Autocompletar_picture,
 .dock_item_Auto-achèvement_picture,
 .dock_item_Auto_completamento_picture,
@@ -790,6 +794,7 @@ height: 35px !important;
 .dock_item_Configurações_picture,
 .dock_item_Configurações_picture,
 .dock_item_Настройки_picture,
+.dock_item_Ρυθμίσεις_picture,
 .dock_item_设置_picture {
 background-image: url([[pix:theme|settings]]);
 width: 35px !important;
@@ -903,7 +908,6 @@ block_community.php en_us
 block_community.php ru
 block_glossary_random.php hi
 block_quiz_results.php hi
-block_rss_client.php hi
 block_tags.php en_us
 block_tag_flickr.php pl
 */
