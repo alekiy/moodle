@@ -1,0 +1,10 @@
+<h1>Kurs-Schl&uuml;ssel</h1>
+
+<p>
+  Mit dieser Einstellung k&ouml;nnen Sie den Kurs-Schl&uuml;ssel manuell einstellen. Dies &uuml;berschreibt
+  den Kurs-Schl&uuml;ssel, der vom Moodle-Adminsitrator f&uuml;r diesen Kurs gepflegt wird. Wie auch
+  immer, wenn kein Kurs-Schl&uuml;ssel f&uuml;r diesen Kurs vorhanden ist, so haben Sie die M&ouml;glichkeit,
+  diesen selbst einzutragen und den Kurs so mit einem QUAMP Kurs zu verbinden. Wenn Sie den Kurs-Schl&uuml;ssel,
+  den der Moodle-Adminstrator pflegt, verwenden wollen, so lassen Sie dieses Feld frei.
+</p>
+

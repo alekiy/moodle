@@ -1,0 +1,23 @@
+#region-main {
+	width : 950px;
+}
+
+.add {
+	background:url(../pix/add.png) no-repeat !important;
+}
+
+.save {
+	background:url(../pix/disk.png) no-repeat !important;
+}
+
+.play {
+	background:url(../pix/play.png) no-repeat !important;
+}
+
+.x-toolbar {
+	height : 24px !important;
+}
+
+.x-grid3-row {
+	height : 25px !important;
+}
