@@ -50,7 +50,8 @@
     
     $PAGE->set_url('/mod/etherpad/view.php', array('id' => $id));
     
-    $PAGE->requires->js('/mod/etherpad/js/jquery.min.js', true);
+    //$PAGE->requires->js('/mod/etherpad/js/jquery.min.js', true);
+    $PAGE->requires->js('/theme/up/javascript/jquery-1.8.0.min.js', true);
     $PAGE->requires->js('/mod/etherpad/js/etherpad.js', true);
     
     $title = $course->shortname . ': ' . format_string($etherpad->name);
