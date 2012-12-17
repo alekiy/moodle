@@ -1,6 +1,3 @@
-/*
- * Course Layout
- */
 /* Course
 -------------------------------*/
 .course-content .main {
@@ -12,12 +9,10 @@
 	background: #1f5480;
 }
 
-
-
 .course-content .main .content {
 	margin: 0px !important;
 	background: #f5f6f7;
-	padding: 20px;
+	padding: 5px 20px 5px 20px;
 }
 
 .course-content ul.weeks li.section {
@@ -38,11 +33,14 @@
 
 .sectionname {
 	color: #244f77;
-/* 	font-size: 14px; */
 	font-family: Arial, serif;
 	text-align: left;
 	padding-top: 0px;
 	border-bottom: 1px solid #244f77;
+}
+
+ul.section {
+	margin: 0px 5px 5px 25px;
 }
 
 /* Add Activity Icon

@@ -72,9 +72,14 @@ body.notloggedin.pagelayout-frontpage #region-main {
 }
 
 body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
-    width:560px;
+    width: 560px;
     padding: 0px 20px 0px 20px;
 }
+
+body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
+   /* padding-top:40px;*/
+}
+
 
 body.notloggedin.pagelayout-frontpage #newheaderleft,
 body.notloggedin.pagelayout-frontpage #newheader {
@@ -83,6 +88,11 @@ body.notloggedin.pagelayout-frontpage #newheader {
 
 body.notloggedin.pagelayout-frontpage #page-content .navbar {
     margin-top:0px !important;
+}
+
+body.pagelayout-frontpage #page-content #region-main .region-content {
+    overflow: hidden;
+    padding: 20px 40px 20px 0;
 }
 
 /* Region Pre
@@ -171,10 +181,6 @@ body.notloggedin.pagelayout-frontpage h2.headingblock.header {
 	background: transparent;
 	font-style: normal;
 	padding: 0px;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
-    padding-top:40px;
 }
 
 /* Frontpage - Blocks

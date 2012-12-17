@@ -45,30 +45,30 @@ body {
     position: relative;
     margin-left: 400px;
     left: 100%;
-   
-    padding-bottom:20%;
+    padding-bottom: 5%;
 }
 #page-content #region-pre {
     float: right;
     position: relative;
     width: 200px;
     left: 200px;
-/*     height: 100%; */
     -webkit-box-shadow: 4px -3px 3px #ccc;
     -moz-box-shadow: 4px -3px 3px #ccc;
     box-shadow: 4px -3px 3px #ccc;
 }
+
 #page-content #region-post {
     float: right;
     position: relative;
     left: 600px;
     width: 200px;
 }
+
 #page-content #region-main .region-content {
     overflow: hidden;
-    padding: 20px 40px 20px 0;
-/*     height: 100%; */
+    padding: 0px 40px 20px 0;
 }
+
 .pagelayout-report #page-content #region-main .region-content {
     overflow: auto;
     padding-bottom: 0;
