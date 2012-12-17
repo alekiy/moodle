@@ -1,0 +1,3 @@
+[submodule "question/type/pmatchjme"]
+	path = question/type/pmatchjme
+	url = git://github.com/moodleou/moodle-qtype_pmatchjme.git
