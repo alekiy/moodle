@@ -6,3 +6,6 @@
 [submodule "question\\type\\pmatch"]
 	path = question\\type\\pmatch
 	url = git@github.com:moodleou/moodle-qtype_pmatch.git
+[submodule "mod\\mindmap"]
+	path = mod\\mindmap
+	url = git@github.com:t6nis/moodle-mod_mindmap.git
