@@ -3,3 +3,6 @@
 [submodule "question\\type\\qtype_pmatch"]
 	path = question\\type\\qtype_pmatch
 	url = git@github.com:moodleou/moodle-qtype_pmatch.git
+[submodule "question\\type\\pmatch"]
+	path = question\\type\\pmatch
+	url = git@github.com:moodleou/moodle-qtype_pmatchjme.git
