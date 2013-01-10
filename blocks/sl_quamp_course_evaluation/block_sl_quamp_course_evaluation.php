@@ -230,7 +230,7 @@ class block_sl_quamp_course_evaluation extends block_base {
     ###
 
     # get invitation text
-    if (!$text = $this->config->text) {
+    if (!$text = $this->config->invitation_text) {
       if (!$text = get_config('sl_quamp_course_evaluation', 'block_quamp_invitation_text')) {
         $text = get_string('text', 'block_sl_quamp_course_evaluation');
       }
