@@ -9,3 +9,6 @@
 [submodule "mod\\mindmap"]
 	path = mod\\mindmap
 	url = git@github.com:t6nis/moodle-mod_mindmap.git
+[submodule "mod/groupselect"]
+	path = mod/groupselect
+	url = git@github.com:skodak/moodle-mod_groupselect.git
