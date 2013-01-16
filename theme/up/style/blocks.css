@@ -20,15 +20,11 @@
 
 #region-pre .block .content,
 #region-main .block .content {
-	border-right: 1px solid #244f77;
-	border-bottom: 1px solid #244f77;
-	border-left: 1px solid #244f77;
+	border: 1px solid #244f77;
 }
 
 #region-post .block .content {
-	border-right: 1px solid #2663ae;
-	border-left: 1px solid #2663ae;
-	border-bottom: 1px solid #2663ae;
+	border: 1px solid #2663ae;
 }
 
 .block .header {
