@@ -20,11 +20,15 @@
 
 #region-pre .block .content,
 #region-main .block .content {
-	border: 1px solid #244f77;
+	border-right: 1px solid #244f77;
+	border-left: 1px solid #244f77;
+	border-bottom: 1px solid #244f77;
 }
 
 #region-post .block .content {
-	border: 1px solid #2663ae;
+	border-right: 1px solid #2663ae;
+	border-left: 1px solid #2663ae;
+	border-bottom: 1px solid #2663ae;
 }
 
 .block .header {
@@ -52,36 +56,50 @@ body.editing .block .header .commands {
 	float: right;
 	width: auto;
 	height: 16px;
-	border-right: 1px solid #244f77;
-	border-bottom: 1px solid #244f77;
-	border-left: 1px solid #244f77;
 	vertical-align: middle;
 	background-color: #e8e8e8;
 }
 
+.block .header .commands .icon img {
+	width: 16px;
+	height: 16px;
+	margin: 0px;
+	vertical-align: top;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* Blocks - Editing Mode - Region-Pre
+   Blocks - Editing Mode - Main Region
+---------------------------*/
+body.editing #region-pre .block .header .commands,
+body.editing #region-main .block .header .commands {
+	border-bottom: 1px solid #244f77;
+	border-left: 1px solid #244f77;
+	border-right: 1px solid #244f77;
+}
+
+/* Blocks - Editing Mode - Region-Post
+---------------------------*/
 body.editing #region-post .block .header .commands {
 	border-bottom: 1px solid #2663ae;
 	border-left: 1px solid #2663ae;
 	border-right: 1px solid #2663ae;
 }
 
-.block .header .commands a {
-	padding-bottom: 0px;
-	border-right: 1px solid #2e7cdc !important;
+body.editing #region-pre .block .header .commands img,
+body.editing #region-main .block .header .commands img {
+	border-bottom: 1px solid #244f77;
+	border-right: 1px solid #244f77;
+}
+
+body.editing #region-post .block .header .commands img {
+	border-bottom: 1px solid #2663ae;
 	border-right: 1px solid #2663ae;
 }
 
-.block .header .commands .icon img {
-	width: 15px;
-	height: 15px;
-	margin-right: 0px;
-	vertical-align: top;
-	margin-left: 2px;
-	margin-right: 2px;
-}
-
-.block .commands a.editing_roles {
-	border-right: 0px solid #2e7cdc !important;
+.block .commands a.editing_roles img {
+	border-right: 0px !important;
 }
 
 .block .header .title .block_action {
@@ -254,13 +272,21 @@ body.editing .block_calendar_month img.iconsmall {
 	height: 15px;
 }
 
+/* Block - Images
+---------------------------*/
+img.smallicon {
+	width: 16px;
+}
+
 /* Block - Summary
 ---------------------------*/
-#region-post .block_course_summary .content {
+#region-post .block_course_summary .content,
+#region-post .block_glossary_random .content {
 	border-top: 1px solid #2663ae;
 }
 
-#region-pre .block_course_summary .content {
+#region-pre .block_course_summary .content,
+#region-pre .block_glossary_random .content {
 	border-top: 1px solid #244f77;
 }
 
@@ -276,11 +302,6 @@ body.editing .block_course_summary .header .block_action {
 ---------------------------*/
 .block_navigation .block_tree .tree_item {
 	margin: 0;
-}
-
-.block_navigation .block_tree .smallicon {
-	width: 15px;
-	height: 15px;
 }
 
 /* Block - Navigation

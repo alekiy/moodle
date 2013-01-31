@@ -19,7 +19,7 @@ $THEME->sheets = array(
 	'newsticker',
 	'course',
 	'buttons',
-	'rtl' //23. august		
+	'rtl'	
 );
 
 ////////////////////////////////////////////////////

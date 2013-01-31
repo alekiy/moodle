@@ -13,7 +13,7 @@ body {
     background-image: url([[pix:theme|s-bgrepeat]]);
     background-repeat: repeat-x;
     max-width: 2000px;
-    height: 100%;  min-width: 1000px;
+    height: 100%; 
     font-size:0.8em;
 }
 
@@ -54,64 +54,15 @@ a img {
     border: none;
 }
 
-/* Header
----------------------------*/
-#page-header {
-    color: #fff;
-    height: 58px;
-    background-image: url([[pix:theme|header_t]]);
-    background-repeat:no-repeat;
-    z-index: 29;
-    position: relative;
-}
-
-#page-header div.headermenu {
-    height: 30px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    margin-top: 0px;
-    line-height: 30px;
-}
-
-#newheaderdiv {
-    margin-top:100px;
-}
-
-
-#newheader {
-    position: relative;
-    min-height: 30px;
-    left:-40px;
-    background: #244F77;
-
-
-}
-
-#newheaderleft {
-    position: relative;
-    margin-top: 0px;
-    left:-40px;
-    width:34px;
-    height:12px;
-    background-image: url([[pix:theme|knick]]);
-    background-repeat:no-repeat;
-    display:block;
-
-
-}
-
 h1.headermain {
     font-weight: bold;
     color: #fff;
     padding-left:40px;
- 
     letter-spacing: 0.07em;
     background: #244F77;
     position: relative;
-     font-size: 16px; 
+    font-size: 16px; 
     margin:5px 0 0 0 !important;
-
 }
 
 .headermenu .logininfo,.headermenu .langmenu,.headermenu .langmenu div,.headermenu .langmenu form,.headermenu .langmenu select,.headermenu .langmenu label
@@ -151,7 +102,6 @@ h1.headermain {
 
 #region-main-box {
     background: #eee;
-    
 }
 
 #region-post-box {
@@ -184,15 +134,50 @@ h1.headermain {
     box-shadow: 6px 0px 8px #ccc;*/
 }
 
-#region-main {
-    /*-webkit-box-shadow: 6px 0px 8px #ccc;
-    -moz-box-shadow: 6px 0px 8px #ccc;
-    box-shadow: 6px 0px 8px #ccc;*/
-    background-image: url([[pix:theme|border-left]]);
-    background-repeat: repeat-y;
-    background-position: 0px 0;
-    padding-left:20px;
-   /* height:100% !important;*/
+/* Header
+---------------------------*/
+#page-header {
+    color: #fff;
+    height: 58px;
+    background-image: url([[pix:theme|header_t]]);
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+#page-header div.headermenu {
+    height: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 0px;
+    line-height: 30px;
+}
+
+#newheaderdiv {
+    margin-top:100px;
+}
+
+#newheader {
+    position: relative;
+    min-height: 30px;
+    left:-40px;
+    margin-left: 20px;
+    background: #244F77;
+    -webkit-box-shadow: 4px 4px 10px #244F77;
+	-moz-box-shadow: 4px 4px 10px #244F77;
+	box-shadow: 4px 4px 10px #244F77;
+}
+
+#newheaderleft {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 20px;
+    left:-40px;
+    width:34px;
+    height:12px;
+    background-image: url([[pix:theme|knick]]);
+    background-repeat:no-repeat;
+    display:block;
 }
 
 #region-main-banner {

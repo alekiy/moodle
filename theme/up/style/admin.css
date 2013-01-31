@@ -171,7 +171,8 @@ th, td {
 	margin: 10px 0 10px 0;
 }
 
-table.userenrolment .header {
+table.userenrolment .header,
+table.generaltable .header {
 	background-image: url([[pix:theme|hgradient]]);
 	background-repeat: repeat-x;
 }

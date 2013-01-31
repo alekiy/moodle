@@ -11,8 +11,11 @@
 
 .course-content .main .content {
 	margin: 0px !important;
-	background: #f5f6f7;
+	background: #FFFFFF;
 	padding: 5px 20px 5px 20px;
+	-webkit-box-shadow: 4px 4px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc;
+	box-shadow: 4px 4px 3px #ccc;
 }
 
 .course-content ul.weeks li.section {
@@ -66,7 +69,7 @@ span.section-modchooser-link img {
 
 .course-content .instancename {
 	display: inline-block;
-	line-height: 3.5em;
+	line-height: 2.5em;
 }
 
 
@@ -115,7 +118,7 @@ body.editing li.section.hidden .mod-indent {
 -------------------------------*/
 
 body.editing li.section .content div.summary {
-	background: #fff;
+	background: #e8e8e8;
 	border: 1px solid #ccc;
 	padding: 3px;
 	margin-bottom: 5px;
@@ -123,74 +126,73 @@ body.editing li.section .content div.summary {
 
 body.editing li.section .mod-indent {
 	border: 1px solid #ccc;
-	background: #fff;
+	background: #e8e8e8;
 	margin-bottom: 5px;
 	padding: 3px;
 }
 
 body.editing #region-main li.section .content {
 	border: none;
-	background: #e8e8e8;
+	background: #fff;
 }
-
 
 /* Forms
 ------------------------------- */
-
-
 body.editing .mform .fitem .fitemtitle {
-
-min-width:120px;
-max-width:200px;
-text-align:right;
-
-
+	min-width: 120px;
+	max-width: 200px;
+	text-align: right;
 } 
 
 body.editing form label {
-margin-right:2px;
-
+	margin-right:2px;
 } 
 
 body.editing .mform .fitem fieldset.felement {
-
-padding-left: 5%;
-
+	padding-left: 5%;
 }
-
 
 body.editing .mform  #fgroup_id_buttonar.fitem fieldset.felement {
-
-padding-left: 1%;
-
+	padding-left: 1%;
 }
+
 body.editing .mform .fitem fieldset.felement.fdate_selector, body.editing .mform .fitem fieldset.felement.fdate_time_selector {
-
-padding-left:1%;
-
+	padding-left:1%;
 }
 
-/*course categories*/
+/* Course Categories
+------------------------------- */
 
- .boxaligncenter  { 
+.boxaligncenter  { 
    border:1px dotted #ccc !important;
-    margin-left:0px !important; border:0px;
-    margin-top:10px;
-    width:100%;   text-align:left !important;
+   margin-left:0px !important; border:0px;
+   margin-top:10px;
+   width:100%;
+   text-align:left !important;
 }
 
 .boxaligncenter  thead tr th.header, th{ 
-  text-align:left !important; 
-   
-    
+	text-align:left !important; 
 }
 
+body.pagelayout-coursecategory  table tbody {
+	margin-left:25px;
+	display:block;
+}
 
-body.pagelayout-coursecategory  table tbody {margin-left:25px;display:block;}
-body.pagelayout-coursecategory #coursesearch2 { text-align:left !important;border-top:1px dotted #ccc;padding-top:5px; margin-top:10px;}
-body.pagelayout-coursecategory .courseboxes {font-size:0.9em;}
+body.pagelayout-coursecategory #coursesearch2 {
+	text-align:left !important;
+	border-top:1px dotted #ccc;
+	padding-top:5px;
+	margin-top:10px;
+}
+
+body.pagelayout-coursecategory .courseboxes {
+	font-size:0.9em;
+}
+
 #page-admin-course-category #movecourses .action-icon .smallicon {
-height: 20px;
+	height: 20px;
 	width: 20px;
 	margin: 2px;
 	background-color: #eee;
@@ -202,8 +204,8 @@ height: 20px;
 	overflow: visible;
 }
 
-/* Course enrolment */
-
+/* Course Enrolment
+------------------------------- */
 .userenrolment .col_role .role a img {
 	height: 18px;
 	vertical-align: text-bottom;
