@@ -12,3 +12,18 @@
 [submodule "mod/groupselect"]
 	path = mod/groupselect
 	url = git@github.com:skodak/moodle-mod_groupselect.git
+[submodule "mod/hotpot"]
+	path = mod/hotpot
+	url = git@github.com:tonyjbutler/moodle-mod_hotpot.git
+[submodule "blocks/user_bookmarks"]
+	path = blocks/user_bookmarks
+	url = git@github.com:gurvinder-singh/moodle-block_user_bookmarks.git
+[submodule "blocks/quickcourselist"]
+	path = blocks/quickcourselist
+	url = git@github.com:marxjohnson/moodle-block_quickcourselist.git
+[submodule "/mod/hotpot"]
+	path = /mod/hotpot
+	url = git://github.com/gbateson/moodle-mod_hotpot.git
+[submodule "/mod/journal"]
+	path = /mod/journal
+	url = git://github.com/dmonllao/moodle-mod_journal.git
