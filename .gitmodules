@@ -23,7 +23,8 @@
 	url = git@github.com:marxjohnson/moodle-block_quickcourselist.git
 [submodule "/mod/hotpot"]
 	path = /mod/hotpot
-	url = git://github.com/gbateson/moodle-mod_hotpot.git
 [submodule "/mod/journal"]
 	path = /mod/journal
-	url = git://github.com/dmonllao/moodle-mod_journal.git
+[submodule "blocks/migrationup"]
+	path = blocks/migrationup
+	url = git@github.com:alekiy/migrationup.git
