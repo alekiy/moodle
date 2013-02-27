@@ -5,41 +5,39 @@
 	background: #eee;
 }
 
-.course-content .current {
-	background: #1f5480;
+.course-content li.section .content {
+	-webkit-box-shadow: 4px 4px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc;
+	box-shadow: 4px 4px 3px #ccc;
 }
 
 .course-content .main .content {
 	margin: 0px !important;
 	background: #FFFFFF;
 	padding: 5px 20px 5px 20px;
-	-webkit-box-shadow: 4px 4px 3px #ccc;
-	-moz-box-shadow: 4px 4px 3px #ccc;
-	box-shadow: 4px 4px 3px #ccc;
 }
 
 .course-content ul.weeks li.section {
 	margin-top: 20px;
 }
 
-.course-content .content li.current  {
+.course-content li.current .content {
+	background: #eee;
 	border: 2px solid #244F77;
-}
-
-.course-content .current {
-	background: transparent;
-	border: 2px solid #244F77;
+	-webkit-box-shadow: 4px 4px 3px #244F77;
+	-moz-box-shadow: 4px 4px 3px #244F77;
+	box-shadow: 4px 4px 3px #244F77;
+	
 }
 
 /* Section
 -------------------------------*/
-
 .sectionname {
 	color: #244f77;
 	font-family: Arial, serif;
 	text-align: left;
 	padding-top: 0px;
-	border-bottom: 1px solid #244f77;
+	/*border-bottom: 1px solid #244f77;*/
 }
 
 ul.section {
@@ -51,10 +49,15 @@ ul.section {
 
 .course-content .activityicon {
 	margin-bottom: 0px;
-	width: auto !important;
-	height: auto !important
+	/*width: auto !important;
+	height: auto !important*/
+	width:16px !important;
+	height:16px !important;
 }
 
+.course-content a span:visited, .course-content a:visited {
+	color: #244f77;
+}
 .course-content .activity a:hover {
 	text-decoration:none;
 }
@@ -132,7 +135,6 @@ body.editing li.section .mod-indent {
 }
 
 body.editing #region-main li.section .content {
-	border: none;
 	background: #fff;
 }
 
@@ -198,10 +200,6 @@ body.pagelayout-coursecategory .courseboxes {
 	background-color: #eee;
 	border: 1px solid #2663ae;
 	padding: 1px;
-}
-
-.no-overflow {
-	overflow: visible;
 }
 
 /* Course Enrolment

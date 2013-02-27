@@ -10,7 +10,6 @@ body {
     padding: 0;
     color: #666;
     word-wrap: break-word;
-    background-image: url([[pix:theme|s-bgrepeat]]);
     background-repeat: repeat-x;
     max-width: 2000px;
     height: 100%; 
@@ -22,7 +21,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
 }
 
 .wrapper {
-    margin: 0 35px;
+    margin: 0px 0px 0px 35px;
 }
 
 /* TYPO
@@ -35,12 +34,12 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #2e7cdc
+    color: #2e7cdc;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #2e7cdc
+    color: #2e7cdc;
 }
 
 a:active {
@@ -57,9 +56,9 @@ a img {
 h1.headermain {
     font-weight: bold;
     color: #fff;
-    padding-left:40px;
+    padding-left:5px;
     letter-spacing: 0.07em;
-    background: #244F77;
+    background: #00203D;
     position: relative;
     font-size: 16px; 
     margin:5px 0 0 0 !important;
@@ -101,21 +100,29 @@ h1.headermain {
 ---------------------------*/
 
 #region-main-box {
-    background: #eee;
+    background: #eee;   
 }
 
 #region-post-box {
     background: #fff;
+      background-image: url([[pix:theme|streifen]]);
+    background-position:0 96px;
+    background-repeat:repeat-x;
 }
 
+/* Footer
+-------------------------------*/
 #page-footer {
-    background: #0e2f4f;
+	width: 100%;
+    background: #00203D;
     color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
     -webkit-box-shadow: -4px 3px -4px #ccc;
     -moz-box-shadow: -4px 3px -4px #ccc;
     box-shadow: -4px 3px -4px #ccc;
+    line-height:1.5;
+ 	position:absolute;
+ 	bottom:0;
+ 	margin-bottom: -15px;
 }
 
 #page-footer p{
@@ -128,10 +135,21 @@ h1.headermain {
     position: relative;
 }
 
-#region-main-box {
-    /*-webkit-box-shadow: 6px 0px 8px #ccc;
-    -moz-box-shadow: 6px 0px 8px #ccc;
-    box-shadow: 6px 0px 8px #ccc;*/
+.abstand {height:200px;}
+
+#top{ 
+	min-height: 100%;
+    height: auto!important;
+    margin: 0 0 -200px 0;
+    height: 100%;
+      background-image: url([[pix:theme|streifen]]);
+    background-position:0 96px;
+    background-repeat:no-repeat;
+   
+}
+
+#page-footer .logininfo {
+	margin: 10px 10px;
 }
 
 /* Header
@@ -142,13 +160,14 @@ h1.headermain {
     background-image: url([[pix:theme|header_t]]);
     background-repeat:no-repeat;
     position: relative;
+    background-color:#00203D;
 }
 
 #page-header div.headermenu {
     height: 30px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 4px;
     margin-top: 0px;
     line-height: 30px;
 }
@@ -160,25 +179,15 @@ h1.headermain {
 #newheader {
     position: relative;
     min-height: 30px;
-    left:-40px;
-    margin-left: 20px;
-    background: #244F77;
-    -webkit-box-shadow: 4px 4px 10px #244F77;
-	-moz-box-shadow: 4px 4px 10px #244F77;
-	box-shadow: 4px 4px 10px #244F77;
+  	background: #00203D;
+ /*	-webkit-box-shadow: 4px 4px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc;
+	box-shadow: 4px 4px 3px #ccc;*/
+	margin-right:40px;
+	margin-top:15px;
 }
 
-#newheaderleft {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 20px;
-    left:-40px;
-    width:34px;
-    height:12px;
-    background-image: url([[pix:theme|knick]]);
-    background-repeat:no-repeat;
-    display:block;
-}
+
 
 #region-main-banner {
     background-image: url([[pix:theme|banner_r]]);
@@ -189,13 +198,7 @@ h1.headermain {
     margin-left:365px;
     left:100%;
 }
-/*
-.side-pre-only  #region-main,.content-only #region-main,.content-only #region-main-box	{
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-}
-*/
+
 /* Navbar
 --------------------------*/
 .navbar {
@@ -229,7 +232,7 @@ h1.headermain {
 
 .forumpost .topic {
     background: #eee;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
 }
 
 .forumpost .attachments .iconsmall {
@@ -238,64 +241,6 @@ h1.headermain {
 
 .forumpost .picture img{
 	margin:0;
-}
-
-
-/* YUI Menu - custom menu
--------------------------------*/
-#custommenu {
-    width: 60%;
-    float: left;
-}
-
-#custommenu .yui3-menu-label-active,#custommenu .yui3-menu-label-menuvisible,#custommenu .yui3-menu .yui3-menu .yui3-menu-label-active,#custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible,#custommenu .yui3-menuitem-active .yui3-menuitem-content,#custommenu .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content,#custommenu .yui3-menu-horizontal.javascript-disabled li a:hover
-{
-    background-color: #666;
-}
-
-#custommenu .yui3-menu-content,#custommenu .yui3-menu .yui3-menu .yui3-menu-content
-{
-    background-image: none;
-    background-color: #333;
-    border-width: 0;
-    padding: 0;
-}
-
-#custommenu .yui3-menuitem-active .yui3-menuitem-content {
-    background-image: none;
-}
-
-#custommenu .yui3-menu-label,#custommenu .yui3-menu .yui3-menu .yui3-menu-label
-{
-    background-image: url([[pix:theme|vertical-menu-submenu-indicator]]);
-    background-position: right center;
-    background-repeat: no-repeat;
-}
-
-#custommenu .yui3-menu-label.yui3-menu-label-menuvisible,#custommenu .yui3-menu .yui3-menu .yui3-menu-label.yui3-menu-label-menuvisible
-{
-    background-image: url([[pix:theme|horizontal-menu-submenu-indicator]]);
-}
-
-#custommenu .yui3-menu-horizontal .yui3-menu-label,#custommenu .yui3-menu-horizontal .yui3-menuitem-content
-{
-    border-width: 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 200;
-    line-height: 30px;
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content,#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content .ul
-{
-    border-width: 0;
-}
-
-#custommenu .yui3-menu-horizontal.javascript-disabled li a {
-    padding: 0 20px;
-    display: block;
 }
 
 /* Course - Summary
@@ -332,3 +277,10 @@ iframe#id_introeditor_ifr {max-width:80%;}
 #coursesearch input[type="text"] {
 	min-width: 12.25em;
 }
+
+/* questionbank - table icon 
+-------------------------------*/
+#categoryquestions .iconcol {
+	width: 30px; 
+}
+

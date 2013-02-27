@@ -20,6 +20,8 @@
 .tabtree .tabrow0 {
 	width: 100%;
 	margin: 1em 0px;
+	margin-bottom:50%;
+	line-height: 3;
 }
 
 .tabtree .tabrow0 li {
@@ -82,7 +84,7 @@
 	padding: 8px 10px 5px;
 	border-width: 2px 2px 0;
 	border-style: solid;
-	border-color: #DDD;
+	border-color: #ccc;
 	margin: 0 2px;
 	margin-left:0px;
 }
@@ -91,7 +93,7 @@
 .tabtree .here ul a.nolink,
 .tabtree a.nolink:hover,
 .tabtree .here ul a.nolink:hover {
-	color: #888;
+	color: #666;
 	text-decoration: none;
 }
 
@@ -122,7 +124,7 @@ border: 1px dotted #ccc;
 
 
 #page-admin-roles-define tr.rolecap {
-	border: 1px solid #CECECE;
+	border: 1px solid #E1E1DF;
 }
 
 #page-admin-roles-define tr.rolecap td.inherit,
@@ -144,7 +146,7 @@ border: 1px dotted #ccc;
 }
 
 #page-admin-roles-define .capdefault {
-	background-color: #DDD;
+	background-color: #ccc;
 	border: 1px solid #CECECE;
 }
 
@@ -178,9 +180,9 @@ table.generaltable .header {
 }
 
 .userenrolment {font-size:90%;border:1px solid #999;}
-.userenrolment tr.r0 {background-color:#F9F9F9;}
-.userenrolment tr.r1 {background-color:#F3F3F3;}
-.userenrolment td {border:1px solid #E9E9E9;border-top-color:#F6F6F6;border-right-color:#EEE;border-left-color:#F3F3F3;}
+.userenrolment tr.r0 {background-color:#E9E9E9;}
+.userenrolment tr.r1 {background-color:#E9E9E9;}
+.userenrolment td {border:1px solid #E9E9E9;border-top-color:#E9E9E9;border-right-color:#EEE;border-left-color:#E9E9E9;}
 .userenrolment td.c0 {border-left-width:0;}
 .userenrolment td.lastcol {border-right-color:#999;}
 .userenrolment .col_bulkops {vertical-align:middle;text-align:center;}
@@ -205,3 +207,13 @@ table.generaltable .header {
 .path-enrol .enrolcohortbutton.instance1,
 .path-enrol .assignuserrole.instance1 {float:right;}
 .path-enrol .singleselect.bulkuserop {float:left;}
+
+
+/* mediaplugin
+--------------------------*/
+.mediaplugin_html5audio, .mediaplugin_html5video, .mediaplugin_swf, .mediaplugin_flv, .mediaplugin_real, .mediaplugin_youtube, .mediaplugin_vimeo, .mediaplugin_wmp, .mediaplugin_qt {
+display: inline-block;
+
+}
+
+iframe html body form fieldset iframe html body div#page {min-width:100px !important;}

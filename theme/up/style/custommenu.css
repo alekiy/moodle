@@ -1,0 +1,52 @@
+/* YUI Menu - custom menu
+-------------------------------*/
+#page-header-wrapper {
+	margin-left: 163px;
+}
+
+#custommenu .yui3-menu-content {
+	background-color: #244f77;
+	-moz-box-shadow: 3px 3px 3px #0E2F4F;
+	-webkit-box-shadow: 3px 3px 3px #0E2F4F;
+	box-shadow: 3px 3px 3px #0E2F4F;
+}
+
+#custommenu .yui3-menuitem-active .yui3-menuitem-content,#custommenu .yui3-menu-label,#custommenu .yui3-menu-label-menuvisible {
+	background-color: #244f77;
+}
+
+.yui3-skin-sam .yui3-menu-content,.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {
+	border: 0px;
+	padding: 0px 0;
+}
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,.yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+	border-width: 0 1px 0 0 !important;
+	margin: 0px;
+}
+
+#page-header-wrapper #custommenu ul  li div div ul li {
+	border-bottom: 1px solid #ccc !important;
+	line-height: 2;
+}
+
+#page-header-wrapper #custommenu ul  li div div ul li a:hover {
+	background: #00203DF;
+}
+
+#page-header-wrapper #custommenu li a.yui3-menu-label:hover {
+	background: #00203D;
+}
+
+a.yui3-menu-label:hover {
+	background: #00203D;
+}
+
+#page-header-wrapper #custommenu ul li div.yui3-menu div.yui3-menu-content ul li.yui3-menuitem a.yui3-menuitem-content:hover {
+	background: #00203D;
+}
+
+#page-header-wrapper #custommenu a:visited,#page-header-wrapper #custommenu  a:hover,#page-header-wrapper #custommenu a:active,#page-header-wrapper #custommenu a:link {
+	color: #FFF;
+	text-decoration: none;
+}

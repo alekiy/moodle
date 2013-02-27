@@ -12,10 +12,24 @@ height: 35px !important;
 
 /*manual added */
 .dock_item_Login-UP_picture {
-background-image: url([[pix:theme|Login-UP]]);
-width: 35px !important;
-height: 35px !important;
+	background-image: url([[pix:theme|Login-UP]]);
+	width: 35px !important;
+	height: 35px !important;
 }
+
+/* manual added
+ * Migrationblock
+ */
+ 
+ .dock_item_Kursübertragung_picture {
+ 	background-image: url([[pix:theme|migration]]);
+	width: 35px !important;
+	height: 35px !important;
+ }
+
+
+
+
 
 /* manual added
  * Course evaluation SL_QUAMP
@@ -23,6 +37,15 @@ height: 35px !important;
  .dock_item_Kurs-Evaluation_picture,
 .dock_item_Course_evaluation_picture {
 	background-image: url([[pix:theme|course_evaluation]]);
+	width: 35px !important;
+	height: 35px !important;
+}
+
+/* manual added
+ * Quick Course List
+ */
+.dock_item_Quick_Course_List_picture {
+	background-image: url([[pix:theme|quickcourselist]]);
 	width: 35px !important;
 	height: 35px !important;
 }
@@ -131,7 +154,9 @@ height: 35px !important;
 }
 
 /* block_admin_bookmarks 
+   block_user_bookmarks
 --------------------------*/
+.dock_item_User_bookmarks_picture,
 .dock_item_Admin_bookmarks_picture, /* manual added */
 .dock_item_Upravit_záložky_picture,
 .dock_item_Administratorlesezeichen_picture,

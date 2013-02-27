@@ -125,9 +125,9 @@ echo $OUTPUT->doctype() ?>
 			</div>
 		</div> 
 		<!-- END OF CONTENT -->
-		<!-- START OF FOOTER -->
+		<!-- START OF FOOTER -->	
 		<div id="page-footer" class="wrapper2">
-			<div class="footer-shadow">
+				
 				<p class="helplink">
 					<?php echo page_doc_link(get_string('moodledocslink')) ?>
 				</p>
@@ -138,9 +138,9 @@ echo $OUTPUT->doctype() ?>
        				echo $OUTPUT->standard_footer_html();
        				echo $OUTPUT->home_link();
        			?>
-       		</div>
 		</div>
 		<!-- END OF FOOTER -->
+		<div class="footer-shadow"></div>
 	</div>
 	<?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>

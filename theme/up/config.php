@@ -9,7 +9,6 @@ $THEME->parents =array('base');
 $THEME->sheets = array(
     'core',
     'blocks',
-    'settings',
     'pagelayout',
     'dock',
     'dock_pics',
@@ -19,7 +18,8 @@ $THEME->sheets = array(
 	'newsticker',
 	'course',
 	'buttons',
-	'rtl'	
+	'rtl',
+	'custommenu'
 );
 
 ////////////////////////////////////////////////////
@@ -144,7 +144,7 @@ $THEME->layouts = array(
 // specific page.
 ///////////////////////////////////////////////////////////////
 
-$THEME->csspostprocess = 'overlay_process_css';
+$THEME->csspostprocess = 'up_process_css';
 
 ////////////////////////////////////////////////////
 // Allows the user to provide the name of a function
@@ -155,7 +155,8 @@ $THEME->csspostprocess = 'overlay_process_css';
 $THEME->javascripts = array(
 						'up_dockmod',
 						'jquery-1.8.0.min',
-						'newsticker');
+						'newsticker',
+						'footer');
 
 ////////////////////////////////////////////////////
 // An array containing the names of JavaScript files

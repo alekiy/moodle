@@ -71,7 +71,7 @@ body.pagelayout-frontpage.notloggedin #dock {
 	margin-left: 0px;
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	min-width: 270px;
+	min-width: 271px;
 }
 
 #dockeditempanel.dockitempanel_hidden {
@@ -92,6 +92,7 @@ body.pagelayout-frontpage.notloggedin #dock {
 	min-height:25px;
 	margin: 0px;
 	padding-left: 5px;
+	border-right:1px solid #244f77;
 }
 
 body.editing #dockeditempanel .dockeditempanel_hd {
@@ -99,6 +100,8 @@ body.editing #dockeditempanel .dockeditempanel_hd {
 	padding-left: 0px;
 	text-align: left;
 	border-left: 1px solid #ccc;
+	border-right:1px solid #244f77;
+	
 }
 
 #dockeditempanel .dockeditempanel_hd h2 {
@@ -151,6 +154,7 @@ body.editing #dockeditempanel .dockeditempanel_hd .commands img {
 #dockeditempanel .dockeditempanel_bd {
 	min-width:270px;
 	background-color: #FFF;
+	border-right:1px solid #ccc;
 }
 
 #dockeditempanel .dockeditempanel_bd .block_docked {
@@ -180,12 +184,12 @@ body.editing #dockeditempanel .dockeditempanel_hd .commands img {
 .dir-rtl #dock {
 	left: auto;
 	right: 0%;
-	border-left: 1px solid #DDD;
+	border-left: 1px solid #ccc;
 }
 
 .dir-rtl #dock .dockedtitle {
-	border-bottom: 0px solid #DDD;
-	border-top: 1px solid #EEE;
+	border-bottom: 0px solid #ccc;
+	border-top: 1px solid #ccc;
 	cursor: pointer;
 }
 

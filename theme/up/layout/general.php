@@ -48,6 +48,7 @@ echo $OUTPUT->doctype() ?>
 
 		<!-- START OF HEADER -->
 		<div id="page-header">
+		
 			<div id="page-header-wrapper" class="wrapper clearfix">
 				<?php if ($hascustommenu) { ?>
 				<div id="custommenu">
@@ -91,7 +92,7 @@ echo $OUTPUT->doctype() ?>
 									<?php } ?>
 								</div>
 								<div id="region-main">			
-								  	<div id="newheaderleft"></div>
+								  
 									<div id="newheader">
 										<h1 class="headermain">
 											<?php echo $PAGE->heading ?>
@@ -115,7 +116,7 @@ echo $OUTPUT->doctype() ?>
 							<div id="region-post" class="block-region">
 								<div class="region-content">
 									<?php echo $OUTPUT->blocks_for_region('side-post') ?>
-								</div>
+								</div>			
 							</div>
 							<?php } ?>
 

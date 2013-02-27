@@ -11,4 +11,7 @@ $string['footnotedesc'] = 'The content from this textarea will be displayed in t
 $string['frontpage-links'] = 'Frontpage-Links';
 $string['frontpage-linksdsec'] = 'The content from this textarea will be displayed as Links on the Frontpage.';
 
+$string['regionwidth'] = 'Column width';
+$string['regionwidthdesc'] = 'This sets the width of the two block regions that form the left and right columns.';
+
 ?>

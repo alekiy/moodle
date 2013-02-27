@@ -313,3 +313,90 @@ body.editing .block_course_summary .header .block_action {
 .block_navigation .block_tree li.depth_2 ul {
 	padding-left: 5px;
 }
+
+/* Block Quiz
+---------------------------*/
+div#mod_quiz_navblock div#quiz-timer {
+	font-size: 1.5em;
+}
+
+div#mod_quiz_navblock div#quiz-timer span {
+	color:red;	
+
+}
+
+/* Migration Block
+-------------------------------*/
+.block_migrationup .content {
+	text-align: center;
+}
+
+/* Migration Form
+-------------------------------*/
+.migrationform {
+	margin-top:30px;
+}
+
+form.migrationform  div div#fitem_id_oldcourseur1.fitemtitle {
+	max-width:250px;
+}
+.migrationform fieldset {
+	border:1px solid #ccc;
+	padding:3px;
+	
+}
+
+.migrationform fieldset legend {
+	border:0px;
+	margin-bottom:10px;
+	
+}
+
+.migrationform div#fitem_id_oldcourseurl div.fitemtitle, .migrationform div#fitem_id_userdata div.fitemtitle {
+	max-width:300px;	
+	width:250px;
+}
+
+.migrationform img.url {
+	
+	border-top: 4px solid #ccc;
+	border-left: 4px solid #ccc;
+	margin:10px 0px 10px 0px;
+	-webkit-box-shadow: 0px 4px 3px #ccc, 4px 2px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc, 4px 2px 3px #ccc;
+	box-shadow: 0px 4px 3px #ccc, 4px 2px 3px #ccc;
+}
+
+div.block_migrationup a.migrationlink {
+	display: block;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	color: #fff;
+	-moz-border-radius: 2px;
+	border: 1px solid #fff;
+	background: #244f77;
+	padding: 4px;
+	-moz-box-shadow: 0 1px 3px #111;
+	-webkit-box-shadow: 0 1px 3px #111;
+	box-shadow: 0 1px 3px #111;
+	padding-top:0px;
+	padding-bottom:0px;
+	text-align:center;
+	
+}
+
+div.block_migrationup a.migrationlink:hover {
+	
+	border: 1px solid #ccc;
+	-moz-border-radius: 2px;
+	background: #2663ae;
+	text-decoration:none;
+	color: white !important;
+	padding-top:0px;
+	padding-bottom:0px;
+	-moz-border-radius: 2px;
+	-moz-box-shadow: inset 0 1px 3px #111;
+	-webkit-box-shadow: inset 0 1px 3px #111;
+	box-shadow: inset 0 1px 3px #111;
+}
+

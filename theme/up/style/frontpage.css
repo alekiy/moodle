@@ -1,99 +1,62 @@
 /* Frontpage style
 --------------------------*/
-
-/* Disable Dock on Frontpage when not loggedin
---------------------------*/
-body.pagelayout-frontpage.notloggedin #dock {
-	visibility: hidden;
-	display: none;
-}
-
-body.notloggedin.pagelayout-frontpage {
-background-image: url([[pix:theme|f-bgrepeat]]);
-}
-
-body.notloggedin.pagelayout-frontpage #page {
-    min-height:782px;
-    overflow:hidden;
-    width:1500px !important;
-    margin:0 auto;
-}
-
-body.pagelayout-frontpage #page {
-    height:100% !important;
-}
-
-body.notloggedin.pagelayout-frontpage #top {
-	background-image: url([[pix:theme|frontpage]]) !important;
-    background-position: 0px 0px;
+body.notloggedin.pagelayout-frontpage #top{
+	background-image: url([[pix:theme|frontpage]]);
     background-repeat: no-repeat;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content-wrapper {
-    margin-left:0px;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content {	
-    overflow:hidden;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content #region-main-box {
-    background:transparent;
-    margin-left:40px;
-    box-shadow:none;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content #region-post-box {
-    background:transparent;
-    margin:0;
-    width:80%;
-    box-shadow: none;
-}
-
-/* Region Main
--------------------------------*/
-body.notloggedin.pagelayout-frontpage #page-header {
-    background-image: url([[pix:theme|header_f]]);
+    background-position:0 0;
 }
 
 body.notloggedin.pagelayout-frontpage #region-main-banner {
        display:none;
 }
 
-body.notloggedin.pagelayout-frontpage #region-main {
-    background-image: url([[pix:theme|frontpage-column-content]]);
-    background-repeat:repeat-y;
-    height:630px;
-    margin-left:423px !important;
-    padding:0;
-    background-color:transparent;
-    width:600px;
-    padding-bottom:0px !important;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
-    width: 560px;
-    padding: 40px 20px 0px 20px;
-}
-
-body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
-   /* padding-top:40px;*/
-}
-
-
 body.notloggedin.pagelayout-frontpage #newheaderleft,
 body.notloggedin.pagelayout-frontpage #newheader {
     display:none;
 }
 
-body.notloggedin.pagelayout-frontpage #page-content .navbar {
-    margin-top:0px !important;
+
+body.notloggedin.pagelayout-frontpage #page-content-wrapper {
+   max-width: 1400px;
+    margin: 0;
+}
+
+/* Region Main
+-------------------------------*/
+body.notloggedin.pagelayout-frontpage #page-content #region-main-box {
+    background:transparent;
+    box-shadow:none;
+    margin-left: -240px; /* interesting */
+}
+
+body.notloggedin.pagelayout-frontpage #page-content #region-main {
+	min-height: 0px;
+    background-image: url([[pix:theme|frontpage-column-content]]);
+ 
+    height:830px;
+    margin-left: 610px !important; /* interesting */
+}
+
+body.notloggedin.pagelayout-frontpage #region-main .breadcrumb {
+    display:none;
 }
 
 body.pagelayout-frontpage #page-content #region-main .region-content {
     overflow: hidden;
-    padding: 20px 40px 20px 0;
+    padding: 20px 40px 20px 0px;
 }
+
+body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {
+    overflow: hidden;
+    padding: 20px 40px 20px 20px;
+}
+
+body.notloggedin.pagelayout-frontpage #page-content #region-post-box {
+    background:transparent;
+    box-shadow: none;
+}
+
+
 
 /* Region Pre
 -------------------------------*/
@@ -102,8 +65,8 @@ body.notloggedin.pagelayout-frontpage #page-content #region-pre {
     background-repeat:repeat-y;
     height:629px;
     background-position:center;
-    left:75px;
-    box-shadow: none
+	left: 215px;
+    box-shadow: none;
 }
 
 /* Region Post
@@ -113,58 +76,59 @@ body.notloggedin.pagelayout-frontpage #page-content #region-post {
     background-repeat:repeat-y;
     height:629px;
     background-position:center;
-    left:500px;
-}
-
-body.notloggedin.pagelayout-frontpage #region-main .breadcrumb {
-    display:none;
-}
-
-body.notloggedin.pagelayout-frontpage #page  #region-main-banner {
-	margin-left:10px;border:1px solid red !important;
+    left:635px;
 }
 
 /* Footer
 -------------------------------*/
 body.notloggedin.pagelayout-frontpage #page-footer {
+	max-width: 1490px;
+	margin-top: 0px;
 	padding-top: 0px;
-    background-color:transparent;
-	overflow:hidden;
+	padding-bottom: 0px;
+	overflow: hidden;
+	background-image:url([[pix:theme|footer-border]]);
+	background-repeat:repeat-y;
+	position:relative;
+	margin-bottom: 0px;
+	float:none;
 }
 
-body.notloggedin.pagelayout-frontpage #page-footer .footer-shadow {
-	margin-bottom: 30px;
-	background-color: #012C56;
-	margin-left: 30px;
-	margin-right: 40px;
-	-moz-box-shadow: 0px 0px 30px 15px #CCC;
-	-webkit-box-shadow: 0px 0px 30px 15px #CCC;
-	box-shadow: 0px 0px 30px 15px #CCC;
+body.notloggedin.pagelayout-frontpage .footer-shadow {
+	background-image: url([[pix:theme|footer-border-bottom]]);
+	background-repeat: no-repeat;
+	height: 48px; 
+	position: relative;
+	max-width: 1490px;	
 }
 
 body.notloggedin.pagelayout-frontpage #page-footer .sitelink {
 	margin-top: 5px;
 }
 
-
-/* General styles
--------------------------------*/
-body.notloggedin.pagelayout-frontpage #page-content .forumpost {
-    border: 0px;
+body.notloggedin.pagelayout-frontpage #page {
+	position:static !important;
+	min-height:10px;
 }
 
 /* General styles
 -------------------------------*/
 body.pagelayout-frontpage .sitetopic {
-    border: 0px;
-    background-color: #EEE;
+	border: 2px solid #eee;
     padding: 10px;
+    -webkit-box-shadow: 4px 4px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc;
+	box-shadow: 4px 4px 3px #ccc;
 }
 
 body.notloggedin.pagelayout-frontpage .sitetopic {
 	background-color: transparent;
 	margin: 0px;
 	padding: 0px;
+	border: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 body.pagelayout-frontpage h2.headingblock.header {
@@ -183,80 +147,64 @@ body.notloggedin.pagelayout-frontpage h2.headingblock.header {
 	padding: 0px;
 }
 
+/* Forumpost Style
+-------------------------------*/
+body.notloggedin.pagelayout-frontpage #page-content .forumpost {
+    border: 0px;
+}
+
+/* Disable Dock on Frontpage when not loggedin
+--------------------------*/
+body.pagelayout-frontpage.notloggedin #dock {
+	visibility: hidden;
+	display: none;
+}
+
 /* Frontpage - Blocks
 -------------------------------*/
-/* disable commands for block on frontpage */
-
-body.notloggedin.pagelayout-frontpage #page-content #region-pre .region-content,
-body.notloggedin.pagelayout-frontpage #page-content #region-post .region-content {
-    padding: 40px 10px 0px 0px;
+body.notloggedin.pagelayout-frontpage #region-post .block .content,
+body.notloggedin.pagelayout-frontpage #region-pre .block .content {
+    border:0px;
 }
 
 body.notloggedin.pagelayout-frontpage #region-post .block .header {
     background-color: #244f77;
 }
 
-body.notloggedin.pagelayout-frontpage #region-post .block .content,
-body.notloggedin.pagelayout-frontpage #region-pre .block .content {
-    border:0px;
+
+body.notloggedin.pagelayout-frontpage #page-content #region-pre .region-content,
+body.notloggedin.pagelayout-frontpage #page-content #region-post .region-content {
+    padding: 40px 10px 0px 0px;
 }
 
+/* disable commands for block on frontpage */
 body.notloggedin.pagelayout-frontpage .block-region .block .header .block_action {
     display: none;
 }
 
-body.notloggedin.pagelayout-frontpage .block .content img.smallicon 
-{width:15px; height:15px;margin-left:1px;}
-
-/* News
-------------------------------*/
-body.pagelayout-frontpage #newdiscussionform {
-    margin-bottom:15px;
-}
-
 /* Login-UP Block
 -------------------------------*/
-.block_loginup .content .username input {
+body.notloggedin.pagelayout-frontpage .block_loginup .content .username input {
     width:160px;
     margin-bottom:10px;
 }
 
-.block_loginup .content .password input {
+body.notloggedin.pagelayout-frontpage .block_loginup .content .password input {
     width:160px;
 }
 
-.block_loginup .content .btn {
+body.notloggedin.pagelayout-frontpage .block_loginup .content .btn {
     text-align:right;
     width:auto;
 }
 
-.block_loginup .content .btn input{
+body.notloggedin.pagelayout-frontpage .block_loginup .content .btn input{
     margin-left:20px;
     width:120px;
 }
 
-/* Link-UP Block
--------------------------------*/
-.block.block_html .content {
-	padding-left:10px;
-}
-
-/* SIDE-PRE only
-------------------------------*/
-body.notloggedin.pagelayout-frontpage.side-pre-only #page-content #region-main-box #region-post-box {
-    margin-left: 0px;
-}
-
-body.notloggedin.pagelayout-frontpage.side-pre-only #page-content #region-main-box #region-post-box #region-pre {
-    left: 75px;
-}
-
 /* SIDE-POST only
 ------------------------------*/
-body.notloggedin.pagelayout-frontpage.side-post-only #page-content #region-main-box #region-post-box {
-    margin-left: 0px;
-}
-
 body.notloggedin.pagelayout-frontpage.side-post-only #page-content #region-main-box #region-post-box #region-post {
-	left:75px;
+	left: 420px;
 }

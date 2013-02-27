@@ -60,6 +60,10 @@ body.pagelayout-login .loginbox .form-input #loginbtn {
 	width: 103%;
 }
 
+body.pagelayout-login .loginbox {
+max-width: 700px;
+}
+
 body.pagelayout-login .rememberpass {
 	margin-left: 5px;
 }
@@ -76,4 +80,9 @@ body.pagelayout-login .guestsub {
 body.pagelayout-login #outer2 #content-outer2,body.pagelayout-login #outer1 #content-outer1
 	{
 	display: none;
+}
+
+body.pagelayout-login #page
+ {
+	position:static; /*bewirkt, dass der footer an den unteren seitenrand rutscht*/
 }
