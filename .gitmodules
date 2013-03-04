@@ -18,9 +18,6 @@
 [submodule "blocks/user_bookmarks"]
 	path = blocks/user_bookmarks
 	url = git@github.com:gurvinder-singh/moodle-block_user_bookmarks.git
-[submodule "blocks/quickcourselist"]
-	path = blocks/quickcourselist
-	url = git@github.com:marxjohnson/moodle-block_quickcourselist.git
 [submodule "/mod/hotpot"]
 	path = /mod/hotpot
 [submodule "blocks/migrationup"]
@@ -29,3 +26,6 @@
 [submodule "mod/journal"]
 	path = mod/journal
 	url = git://github.com/dmonllao/moodle-mod_journal.git
+[submodule "blocks/quickcourselist"]
+	path = blocks/quickcourselist
+	url = git://github.com/marxjohnson/moodle-block_quickcourselist.git
