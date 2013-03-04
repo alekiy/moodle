@@ -51,9 +51,9 @@ class block_loginup extends block_base {
 
             $this->content->text .= "\n".'<form class="loginform" id="login" method="post" action="'.get_login_url().'" '.$autocomplete.'>';
 
-           	$this->content->text .= '<div class="c1 fld username"><input type="text" name="username" id="login_username" value="'.s($username).'" /></div>';
+           	$this->content->text .= '<div class="c1 fld username"><label for="username">'.get_string('username', 'moodle').':</label><input type="text" name="username" id="login_username" value="'.s($username).'" /></div>';
 
-            $this->content->text .= '<div class="c1 fld password"><input type="password" name="password" id="login_password" value="" '.$autocomplete.' /></div>';
+            $this->content->text .= '<div class="c1 fld password"><label for="password">'.get_string('password', 'moodle').':</label><input type="password" name="password" id="login_password" value="" '.$autocomplete.' /></div>';
             
             if (isset($CFG->rememberusername) and $CFG->rememberusername == 2) {
             	$checked = $username ? 'checked="checked"' : '';
