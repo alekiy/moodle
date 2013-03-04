@@ -167,7 +167,6 @@ h1.headermain {
     height: 30px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    padding-top: 4px;
     margin-top: 0px;
     line-height: 30px;
 }
@@ -284,3 +283,7 @@ iframe#id_introeditor_ifr {max-width:80%;}
 	width: 30px; 
 }
 
+img.iconsmall {
+	height: 16px;
+	width: 16px;
+}

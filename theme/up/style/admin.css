@@ -5,7 +5,7 @@
 --------------------------*/
 .tabtree {
 	position: relative;
-	margin-bottom: 3.5em;
+	margin-bottom: 0em;
 }
 
 .tabtree ul {
@@ -20,7 +20,6 @@
 .tabtree .tabrow0 {
 	width: 100%;
 	margin: 1em 0px;
-	margin-bottom:50%;
 	line-height: 3;
 }
 
@@ -82,9 +81,7 @@
 .tabtree .tabrow0 li a {
 	background: #F7F7F7;
 	padding: 8px 10px 5px;
-	border-width: 2px 2px 0;
-	border-style: solid;
-	border-color: #ccc;
+	border: 2px solid #ccc;
 	margin: 0 2px;
 	margin-left:0px;
 }
@@ -215,5 +212,3 @@ table.generaltable .header {
 display: inline-block;
 
 }
-
-iframe html body form fieldset iframe html body div#page {min-width:100px !important;}
