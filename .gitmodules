@@ -29,3 +29,12 @@
 [submodule "blocks/quickcourselist"]
 	path = blocks/quickcourselist
 	url = git://github.com/marxjohnson/moodle-block_quickcourselist.git
+[submodule "mod/scheduler"]
+	path = mod/scheduler
+	url = git://github.com/bostelm/moodle-mod_scheduler.git
+[submodule "mod/dialogue"]
+	path = mod/dialogue
+	url = git://github.com/troywilliams/moodle-mod_dialogue.git
+[submodule "blocks/course_overview_campus"]
+	path = blocks/course_overview_campus
+	url = git://github.com/abias/moodle-block_course_overview_campus.git

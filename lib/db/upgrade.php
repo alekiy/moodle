@@ -102,6 +102,13 @@ function xmldb_main_upgrade($oldversion) {
     // Moodle v2.2.0 release upgrade line
     // Put any upgrade step following this
 
+	if ($oldversion) {
+        // Make sure the sortorder is not above the unsigned integer MySQL range.
+	    fix_course_sortorder();
+		// Main savepoint reached.
+		
+    }
+	
     if ($oldversion < 2011120500.02) {
 
         upgrade_set_timeout(60*20); // This may take a while
@@ -991,6 +998,6 @@ function xmldb_main_upgrade($oldversion) {
         // Main savepoint reached.
         upgrade_main_savepoint(true, 2012062503.07);
     }
-
+	
     return true;
 }

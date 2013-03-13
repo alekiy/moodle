@@ -318,12 +318,26 @@ body.editing .block_course_summary .header .block_action {
 ---------------------------*/
 div#mod_quiz_navblock div#quiz-timer {
 	font-size: 1.5em;
+	display: block;
+	position: fixed;
+	top: 50px;
+	right: 410px;
+	background-color: #FFF;
+	z-index: 100;
+	-webkit-box-shadow: 0px 4px 3px #ccc, 4px 2px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc, 4px 2px 3px #ccc;
+	box-shadow: 0px 4px 3px #ccc, 4px 2px 3px #ccc;
+	border:1px solid #ccc;
+	padding:3px;
 }
 
 div#mod_quiz_navblock div#quiz-timer span {
 	color:red;	
 
 }
+
+
+
 
 /* Migration Block
 -------------------------------*/

@@ -15,7 +15,7 @@ body.notloggedin.pagelayout-frontpage .newsticker-wrapper .newsticker-contents {
 body.notloggedin.pagelayout-frontpage .newsticker-wrapper .forumpost {
 	padding-top:0px;
 	width: 100%;
-	color: #6a6a6a;
+
 	position: relative;
 	z-index: 999;
 	border-bottom: 1px dashed #6a6a6a;

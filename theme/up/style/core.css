@@ -8,7 +8,7 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
-    color: #666;
+    color: #333;
     word-wrap: break-word;
     background-repeat: repeat-x;
     max-width: 2000px;
@@ -18,6 +18,42 @@ body {
 
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
     font-family: Arial, 'Myriad Pro', 'Myriad', helvetica, sans-serif;
+}
+
+/* Headlines
+-----------------------------------*/
+.region-content .course-content .section h1 {
+	text-transform: uppercase;
+	color:#244f77;
+}
+
+.region-content .course-content .section h2 {
+	font-size: 138.5%;
+	color:#244f77;	
+}
+
+.region-content .course-content .section h3 {
+	font-size: 138.5%;
+	color:#244f77;		
+}
+
+.region-content .course-content .section h4 {
+	font-size: 120%;
+	color:#244f77;	
+}
+
+.region-content .course-content .section h4 {
+	font-size: 110%;
+	color:#244f77;	
+}
+
+.region-content .course-content .section h5 {
+	font-style:italic;
+	color:#244f77;		
+}
+
+.region-content .course-content .section h6 {
+	color:#244f77;		
 }
 
 .wrapper {
@@ -286,4 +322,25 @@ iframe#id_introeditor_ifr {max-width:80%;}
 img.iconsmall {
 	height: 16px;
 	width: 16px;
+}
+
+/* Course - Categories 
+-------------------------------*/
+.coursebox {
+	border: 2px solid #eee;
+	padding: 10px;
+	-webkit-box-shadow: 4px 4px 3px #ccc;
+	-moz-box-shadow: 4px 4px 3px #ccc;
+	box-shadow: 4px 4px 3px #ccc;
+}
+
+.coursebox .info {
+	float: none;
+	width: 100%;
+}
+
+.coursebox .summary {
+	float: none;
+	width: 98%;
+	margin-left: 2em;
 }
