@@ -116,7 +116,11 @@ define('PARAM_BOOL',     'bool');
 define('PARAM_CAPABILITY',   'capability');
 
 /**
- * PARAM_CLEANHTML - cleans submitted HTML code. use only for text in HTML format. This cleaning may fix xhtml strictness too.
+ * PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want
+ * to use this. The normal mode of operation is to use PARAM_RAW when recieving
+ * the input (required/optional_param or formslib) and then sanitse the HTML
+ * using format_text on output. This is for the rare cases when you want to
+ * sanitise the HTML on input. This cleaning may also fix xhtml strictness.
  */
 define('PARAM_CLEANHTML', 'cleanhtml');
 
@@ -5125,9 +5129,8 @@ function moodle_process_email($modargs,$body) {
 /**
  * Get mailer instance, enable buffering, flush buffer or disable buffering.
  *
- * @global object
  * @param string $action 'get', 'buffer', 'close' or 'flush'
- * @return object|null mailer instance if 'get' used or nothing
+ * @return moodle_phpmailer|null mailer instance if 'get' used or nothing
  */
 function get_mailer($action='get') {
     global $CFG;
@@ -5466,7 +5469,6 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml='', $a
 
     if ($mail->Send()) {
         set_send_count($user);
-        $mail->IsSMTP();                               // use SMTP directly
         if (!empty($mail->SMTPDebug)) {
             echo '</pre>';
         }
