@@ -38,3 +38,12 @@
 [submodule "blocks/course_overview_campus"]
 	path = blocks/course_overview_campus
 	url = git://github.com/abias/moodle-block_course_overview_campus.git
+[submodule "mod/etherpad"]
+	path = mod/etherpad
+	url = https://github.com/alekiy/etherpad.git
+[submodule "mod/dataform"]
+	path = mod/dataform
+	url = git@github.com:itamart/moodle-mod_dataform.git
+[submodule "enrol/waitlist"]
+	path = enrol/waitlist
+	url = git@github.com:emeneo/moodle-enrol-wait_list.git

@@ -32,8 +32,7 @@ body.notloggedin.pagelayout-frontpage #page-content #region-main-box {
 body.notloggedin.pagelayout-frontpage #page-content #region-main {
 	min-height: 0px;
     background-image: url([[pix:theme|frontpage-column-content]]);
- 
-    height:830px;
+    height:630px;
     margin-left: 610px !important; /* interesting */
 }
 

@@ -156,9 +156,9 @@ h1.headermain {
     -moz-box-shadow: -4px 3px -4px #ccc;
     box-shadow: -4px 3px -4px #ccc;
     line-height:1.5;
- 	position:absolute;
+ 	/*position:absolute;
  	bottom:0;
- 	margin-bottom: -15px;
+ 	margin-bottom: -15px;*/
 }
 
 #page-footer p{
@@ -176,7 +176,7 @@ h1.headermain {
 #top{ 
 	min-height: 100%;
     height: auto!important;
-    margin: 0 0 -200px 0;
+    /*margin: 0 0 -200px 0;*/
     height: 100%;
       background-image: url([[pix:theme|streifen]]);
     background-position:0 96px;
@@ -327,6 +327,7 @@ img.iconsmall {
 /* Course - Categories 
 -------------------------------*/
 .coursebox {
+	width: auto;
 	border: 2px solid #eee;
 	padding: 10px;
 	-webkit-box-shadow: 4px 4px 3px #ccc;

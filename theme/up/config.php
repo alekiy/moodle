@@ -155,8 +155,7 @@ $THEME->csspostprocess = 'up_process_css';
 $THEME->javascripts = array(
 						'up_dockmod',
 						'jquery-1.8.0.min',
-						'newsticker',
-						'footer');
+						'newsticker');
 
 ////////////////////////////////////////////////////
 // An array containing the names of JavaScript files
