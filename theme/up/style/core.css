@@ -307,6 +307,10 @@ iframe#id_introeditor_ifr {max-width:80%;}
 	overflow: visible;
 }
 
+.row {
+	background-color: transparent;
+}
+
 /* Input - Search Courses Frontpage
 -------------------------------*/
 #coursesearch input[type="text"] {
@@ -345,3 +349,14 @@ img.iconsmall {
 	width: 98%;
 	margin-left: 2em;
 }
+
+
+/* Messages 
+-------------------------------*/
+.message .messagearea .messagehistory .right {
+	margin-right: 20%;
+}
+
+body.path-message .region-content {
+	margin-top:20px;
+	}

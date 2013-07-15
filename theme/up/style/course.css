@@ -44,6 +44,10 @@ ul.section {
 	margin: 0px 5px 5px 25px;
 }
 
+.section hr {
+	width:99%;
+}
+
 /* Add Activity Icon
 -------------------------------*/
 
@@ -211,4 +215,19 @@ body.pagelayout-coursecategory .courseboxes {
 
 .userenrolment .cell {
 	vertical-align: middle;
+}
+
+/* Lecture
+------------------------------- */
+.branchbuttoncontainer {
+	text-align:center;
+	margin-right:10px;
+}
+
+.answeroption div.filtertitle {
+	width:50%;
+}
+
+.anseroption div.fcheckbox input {
+	margin-right:5px;
 }

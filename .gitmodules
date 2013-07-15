@@ -1,11 +1,5 @@
 [submodule "question/type/pmatchjme"]
 	path = question/type/pmatchjme
-[submodule "question\\type\\qtype_pmatch"]
-	path = question\\type\\qtype_pmatch
-	url = git@github.com:moodleou/moodle-qtype_pmatch.git
-[submodule "question\\type\\pmatch"]
-	path = question\\type\\pmatch
-	url = git@github.com:moodleou/moodle-qtype_pmatch.git
 [submodule "mod\\mindmap"]
 	path = mod\\mindmap
 	url = git@github.com:t6nis/moodle-mod_mindmap.git
@@ -47,3 +41,6 @@
 [submodule "enrol/waitlist"]
 	path = enrol/waitlist
 	url = git@github.com:emeneo/moodle-enrol-wait_list.git
+[submodule "question/type/pmatch"]
+	path = question/type/pmatch
+	url = https://github.com/moodleou/moodle-qtype_pmatch.git

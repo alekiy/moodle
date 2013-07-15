@@ -154,7 +154,7 @@ $THEME->csspostprocess = 'up_process_css';
 
 $THEME->javascripts = array(
 						'up_dockmod',
-						'jquery-1.8.0.min',
+						'jquery-1.10.2.min',
 						'newsticker');
 
 ////////////////////////////////////////////////////
