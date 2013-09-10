@@ -30,5 +30,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['thisdirection'] = 'rtl';
-$string['thislanguage'] = 'سۆرانی';
+$string['clianswerno'] = 'एन';
+$string['cliansweryes'] = 'वाई';
+$string['clitypevalue'] = 'टाइप मूल्य';
