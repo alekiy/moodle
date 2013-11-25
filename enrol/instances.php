@@ -187,15 +187,26 @@ foreach ($instances as $instance) {
         ++$updowncount;
 
         // edit links
-        if ($plugin->instance_deleteable($instance) && has_capability('moodle/category:viewhiddencategories', $context)) {
-            $aurl = new moodle_url($url, array('action'=>'delete', 'instance'=>$instance->id));
-            $edit[] = html_writer::link($aurl, html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/delete'), 'alt'=>$strdelete, 'class'=>'smallicon')));
+        if ($plugin->instance_deleteable($instance)) {
+        	//Special UP-Changes-START $instance->enrol == 'manual'
+        	if ($instance->enrol == 'manual' && !has_capability('moodle/category:viewhiddencategories', $context)) {
+        	} else {
+            	$aurl = new moodle_url($url, array('action'=>'delete', 'instance'=>$instance->id));
+            	$edit[] = html_writer::link($aurl, html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/delete'), 'alt'=>$strdelete, 'class'=>'smallicon')));
+        	}
+        	//Special UP-Changes-END
         }
-
+		//Special UP-Changes-START $instance->enrol == 'manual'
+		
         if (enrol_is_enabled($instance->enrol)) {
             if ($instance->status == ENROL_INSTANCE_ENABLED) {
-                $aurl = new moodle_url($url, array('action'=>'disable', 'instance'=>$instance->id));
-                $edit[] = html_writer::link($aurl, html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/hide'), 'alt'=>$strdisable, 'class'=>'smallicon')));
+            	//Special UP-Changes-START !$instance->enrol === 'manual'
+            	if ($instance->enrol == 'manual' && !has_capability('moodle/category:viewhiddencategories', $context)) {
+            	} else {
+                	$aurl = new moodle_url($url, array('action'=>'disable', 'instance'=>$instance->id));
+                	$edit[] = html_writer::link($aurl, html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/hide'), 'alt'=>$strdisable, 'class'=>'smallicon')));
+            	}
+            	//Special UP-Changes-END
             } else if ($instance->status == ENROL_INSTANCE_DISABLED) {
                 $aurl = new moodle_url($url, array('action'=>'enable', 'instance'=>$instance->id));
                 $edit[] = html_writer::link($aurl, html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/show'), 'alt'=>$strenable, 'class'=>'smallicon')));

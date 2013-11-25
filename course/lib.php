@@ -4045,10 +4045,6 @@ function update_course($data, $editoroptions = NULL) {
     if (preg_match("/^\s*$/", $data->fullname) ) {
     	throw new moodle_exception('invaliddata');
     }
-
-    if (preg_match("/^\s*$/", $data->idnumber) ) {
-    	throw new moodle_exception('invalidcourseid');
-    }
     // Special UP-Changes-END
 
     $data->timemodified = time();

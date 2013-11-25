@@ -32,15 +32,9 @@ body {
     position: relative;
     width: 200%;
     right: 100%;
-      -moz-box-shadow:
-    5px 0 5px -5px #ccc,
-    -5px 0 5px -5px #ccc;
-    -webkit-box-shadow:
-     5px 0 5px -5px #ccc,
-    -5px 0 5px -5px #ccc;
-    box-shadow:
-    5px 0 5px -5px #ccc,
-    -5px 0 5px -5px #ccc;
+    -moz-box-shadow: 5px 0 5px -5px #ccc, -5px 0 5px -5px #ccc;
+    -webkit-box-shadow: 5px 0 5px -5px #ccc, -5px 0 5px -5px #ccc;
+    box-shadow: 5px 0 5px -5px #ccc, -5px 0 5px -5px #ccc;
 }
 
 #page-content #region-post-box {
@@ -82,7 +76,7 @@ body {
 }
 
 #page-content #region-main .region-content {
-    padding: 0px 40px 20px 0px;
+    padding: 5px 10px 20px 0px;
 }
 
 #page-content #region-pre .region-content,
@@ -101,7 +95,7 @@ body {
 ------------------------------*/
 
 .side-pre-only #page-content #region-main-banner {
-	margin-left:165px; 
+	margin-left:190px; 
 }
 
 .side-pre-only #page-content #region-main-box {
@@ -130,7 +124,7 @@ body {
 ------------------------------*/
 
 .side-post-only #page-content #region-main-banner {
-	margin-left: 165px;
+	margin-left: 190px;
 }
 
 .side-post-only #page-content #region-main-box {
@@ -206,7 +200,7 @@ body {
 ------------------------------*/
 
 .content-only #page-content #region-main-banner {
-	margin-left: -35px;
+	margin-left: -10px;
 } 
 
 .content-only #page-content #region-main-box {

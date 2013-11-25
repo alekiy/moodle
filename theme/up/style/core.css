@@ -57,7 +57,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
 }
 
 .wrapper {
-    margin: 0px 0px 0px 35px;
+    margin: 0px 0px 0px 10px;
 }
 
 /* TYPO
@@ -92,17 +92,21 @@ a img {
 h1.headermain {
     font-weight: bold;
     color: #fff;
-    padding-left:5px;
     letter-spacing: 0.07em;
     background: #00203D;
     position: relative;
-    font-size: 16px; 
-    margin:5px 0 0 0 !important;
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    float: none;
+    margin: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
 }
 
-.headermenu .logininfo,.headermenu .langmenu,.headermenu .langmenu div,.headermenu .langmenu form,.headermenu .langmenu select,.headermenu .langmenu label
-{
-    display: inline !important;
+.headermenu .logininfo,.headermenu .langmenu,.headermenu .langmenu div,.headermenu .langmenu form,.headermenu .langmenu select,.headermenu .langmenu label {
+   display: inline !important;
 }
 
 /* Links of the Header
@@ -141,9 +145,6 @@ h1.headermain {
 
 #region-post-box {
     background: #fff;
-      background-image: url([[pix:theme|streifen]]);
-    background-position:0 96px;
-    background-repeat:repeat-x;
 }
 
 /* Footer
@@ -156,9 +157,6 @@ h1.headermain {
     -moz-box-shadow: -4px 3px -4px #ccc;
     box-shadow: -4px 3px -4px #ccc;
     line-height:1.5;
- 	/*position:absolute;
- 	bottom:0;
- 	margin-bottom: -15px;*/
 }
 
 #page-footer p{
@@ -167,21 +165,17 @@ h1.headermain {
 }
 
 #page-content,#region-main-box,#region-main-wrap,#page-content-wrapper,#top,div.region-content	{
-     /* height: 100%;*/
     position: relative;
 }
 
-.abstand {height:200px;}
+.abstand {
+	height:200px;
+}
 
-#top{ 
+#top { 
 	min-height: 100%;
     height: auto!important;
-    /*margin: 0 0 -200px 0;*/
-    height: 100%;
-      background-image: url([[pix:theme|streifen]]);
-    background-position:0 96px;
-    background-repeat:no-repeat;
-   
+    height: 100%;   
 }
 
 #page-footer .logininfo {
@@ -213,16 +207,10 @@ h1.headermain {
 
 #newheader {
     position: relative;
-    min-height: 30px;
-  	background: #00203D;
- /*	-webkit-box-shadow: 4px 4px 3px #ccc;
-	-moz-box-shadow: 4px 4px 3px #ccc;
-	box-shadow: 4px 4px 3px #ccc;*/
-	margin-right:40px;
-	margin-top:15px;
+    min-height: 30px;  	
+  	margin-right: 25px;
+	margin-top: 10px;
 }
-
-
 
 #region-main-banner {
     background-image: url([[pix:theme|banner_r]]);
@@ -230,7 +218,7 @@ h1.headermain {
     height:81px;
     padding-left:170px;
     position:relative;
-    margin-left:365px;
+    margin-left:390px;
     left:100%;
 }
 
@@ -359,4 +347,4 @@ img.iconsmall {
 
 body.path-message .region-content {
 	margin-top:20px;
-	}
+}

@@ -42,7 +42,7 @@ body.notloggedin.pagelayout-frontpage #region-main .breadcrumb {
 
 body.pagelayout-frontpage #page-content #region-main .region-content {
     overflow: hidden;
-    padding: 20px 40px 20px 0px;
+    padding: 20px 10px 20px 0px;
 }
 
 body.notloggedin.pagelayout-frontpage #page-content #region-main .region-content {

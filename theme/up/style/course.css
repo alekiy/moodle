@@ -2,13 +2,13 @@
 -------------------------------*/
 .course-content .main {
 	border: 1px solid #eee;
-	background: #eee;
 }
 
 .course-content li.section .content {
 	-webkit-box-shadow: 4px 4px 3px #ccc;
 	-moz-box-shadow: 4px 4px 3px #ccc;
 	box-shadow: 4px 4px 3px #ccc;
+	clear: left;
 }
 
 .course-content .main .content {

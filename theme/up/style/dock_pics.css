@@ -44,7 +44,8 @@ height: 35px !important;
 /* manual added
  * Quick Course List
  */
-.dock_item_Quick_Course_List_picture {
+.dock_item_Quick_Course_List_picture,
+.dock_item_Kurssuche_picture {
 	background-image: url([[pix:theme|quickcourselist]]);
 	width: 35px !important;
 	height: 35px !important;
@@ -66,7 +67,22 @@ height: 35px !important;
 .dock_item_课程分类_picture,
 .dock_item_Kategorie_kurzů_picture,
 .dock_item_Kategorie_kursów_picture,
-.dock_item_कोर्स_वर्ग_picture {
+.dock_item_कोर्स_वर्ग_picture,
+.dock_item_Kurzy_picture,
+.dock_item_Kurse_picture,
+.dock_item_Λίστα_Μαθημάτων_picture,
+.dock_item_Lista_de_cursos_picture,
+.dock_item_لیست_درس‌ها_picture,
+.dock_item_Cours_picture,
+.dock_item_कोर्स_सूची_picture,
+.dock_item_Դասընթացներ_picture,
+.dock_item_Corsi_picture,
+.dock_item_Lista_kursów_picture,
+.dock_item_Lista_de_disciplinas_picture,
+.dock_item_Cursos_picture,
+.dock_item_Курсы_picture,
+.dock_item_Danh_sách_khoá_học_picture,
+.dock_item_课程_picture {
 background-image: url([[pix:theme|courses]]);
 width: 35px !important;
 height: 35px !important;
@@ -336,32 +352,11 @@ width: 35px !important;
 height: 35px !important;
 }
 
-/* block_course_list 
---------------------------*/ 
-.dock_item_Kurzy_picture,
-.dock_item_Kurse_picture,
-.dock_item_Λίστα_Μαθημάτων_picture,
-.dock_item_Lista_de_cursos_picture,
-.dock_item_لیست_درس‌ها_picture,
-.dock_item_Cours_picture,
-.dock_item_कोर्स_सूची_picture,
-.dock_item_Դասընթացներ_picture,
-.dock_item_Corsi_picture,
-.dock_item_Lista_kursów_picture,
-.dock_item_Lista_de_disciplinas_picture,
-.dock_item_Cursos_picture,
-.dock_item_Курсы_picture,
-.dock_item_Danh_sách_khoá_học_picture,
-.dock_item_课程_picture {
-background-image: url([[pix:theme|course_list]]);
-width: 35px !important;
-height: 35px !important;
-}
-
 /* block_course_overview 
 --------------------------*/
 .dock_item_Přehled_kurzů_picture,
 .dock_item_Kursübersicht_picture,
+.dock_item_Course_overview_picture,
 .dock_item_Visión_general_del_curso_picture,
 .dock_item_مرور_کلی_درس_picture,
 .dock_item_Vue_d\_picture,
@@ -371,7 +366,7 @@ height: 35px !important;
 .dock_item_Resumo_do_curso_picture,
 .dock_item_Обзор_курса_picture,
 .dock_item_课程概览_picture {
-background-image: url([[pix:theme|course_overview]]);
+background-image: url([[pix:theme|courses]]);
 width: 35px !important;
 height: 35px !important;
 }
